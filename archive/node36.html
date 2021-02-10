@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Subcooled Boiling</TITLE>
+<META NAME="description" CONTENT="Subcooled Boiling">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<!--#include file="/util/header.html" -->
+ <A NAME="tex2html542" HREF="node37.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html540" HREF="node31.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html534" HREF="node35.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html544" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html543" HREF="node37.html">Saturated Boiling and the </A>
+<B>Up:</B> <A NAME="tex2html541" HREF="node31.html">FLOW BOILING HEAT TRANSFER</A>
+<B> Previous:</B> <A NAME="tex2html535" HREF="node35.html">The Onset of Nucleate </A>
+<BR> <P>
+<H1><A NAME="SECTION00950000000000000000">6.5. Subcooled Boiling</A></H1>
+<P>
+The onset of nucleate boiling indicates the location where the vapor can first exist in a stable state on the heater surface without condensing or vapor collapse.  As more energy is input into the liquid (i.e., downstream axially) these vapor bubbles can grow and eventually detach from the heater surface and enter the liquid.  In our past discussion we have suggested that the onset of nucleate boiling occurs at an axial location (Point A on <A HREF="FIGURES/FIG6-4.html">Figure 6.4</A>) before the bulk liquid is saturated (Point C on <A HREF="FIGURES/FIG6-4.html">Figure 6.4</A>).  Likewise the point where the vapor bubbles could detach from the heater surface would also occur at an axial location (Point B on <A HREF="FIGURES/FIG6-4.html">Figure 6.4</A>) before the bulk liquid is saturated.  Now this axial length over which boiling occurs when the bulk liquid is subcooled is called the &quot;subcooled boiling&quot; length.  This region may be large or small in actual size depending on the fluid properties, mass flow rate, pressures and heat flux.  It is a region of inherent nonequilibrium where the flowing mass quality and vapor void fraction are non-zero and positive even though the thermodynamic equilibrium quality and volume fraction would be zero (<A HREF="FIGURES/FIG6-4.html">Figure 6.4</A>  <IMG WIDTH=27 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline5202" SRC="img259.gif"  >  and <I>X</I>(<I>z</I>)); since the bulk temperature is below saturation.
+<P>
+There are two ways to handle this region.  Consider the boundary condition of a uniform heat flux on the heater surface.  First, for conditions where this is a small actual length relative to the total heater wall axial length, one may neglect this length and its effect on heat transfer and pressure drop.  If the subcooled boiling length is appreciable relative to the total heater wall length, then we need to locate the point where the vapor bubbles detach and boiling bubbles are stable in the flow as well as the associated vapor mass 
+fraction and void fraction in this subcooled region.
+<P>
+<A HREF="FIGURES/FIG6-5.html">Figure 6.5</A> depicts the order of magnitude of the vapor void fraction and mass fraction for a steam-water system, as well as lists the various models available for estimating values for this region.  The typical approach is to determine the amount of vapor superheat necessary  <IMG WIDTH=66 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline5002" SRC="img182.gif"  >  to support the vapor bubble departure from the heater wall surface (Point B on <A HREF="FIGURES/FIG6-4.html">Figure 6.4</A>).  Once this is determined one can find the axial location where this would occur.  From this point on one can then calculate the vapor void fraction and mass fraction in the channel.
+<P>
+As <A HREF="FIGURES/FIG6-5.html">Figure 6.5</A> indicates there are only a few complete models developed for the subcooled region.  In these notes we focus on the models developed by Levy (1967) and Zuber (1968) based on relatively good agreement with published data, and the relative ease in applying the subcooled boiling model.  These models, although developed and checked with primarily steam-water data, can be applied to other fluids.
+<P>
+The first objective is to determine the amount of superheat necessary  <IMG WIDTH=71 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline5208" SRC="img260.gif"  >  to allow vapor bubble departure and then the axial location where this would occur.  A force balance was used by Levy (1967) and Staub (1967) to estimate the degree of superheat necessary for bubble departure. 
+<P> <IMG WIDTH=500 HEIGHT=27 ALIGN=BOTTOM ALT="equation2494" SRC="img261.gif"  > <P>
+<P>
+where  <IMG WIDTH=14 HEIGHT=12 ALIGN=MIDDLE ALT="tex2html_wrap_inline5210" SRC="img262.gif"  >  is the radius of vapor bubble at departure, and where the first term represents the buoyancy force (destabilizing force), the second term represents the drag force (destabilizing force), and final force term is due to surface tension (stabilizing force); where  <IMG WIDTH=17 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5212" SRC="img263.gif"  > ,  <IMG WIDTH=18 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5214" SRC="img264.gif"  >  and  <IMG WIDTH=17 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5216" SRC="img265.gif"  >  are proportionality constants.  In this conceptual model the bubble radius  <IMG WIDTH=14 HEIGHT=12 ALIGN=MIDDLE ALT="tex2html_wrap_inline5210" SRC="img262.gif"  > , is assumed to be proportional to the distance to the tip of the vapor bubble,  <IMG WIDTH=16 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5220" SRC="img266.gif"  > , away from the heated wall.  One can then calculate this distance
+<P> <IMG WIDTH=500 HEIGHT=40 ALIGN=BOTTOM ALT="equation2514" SRC="img267.gif"  > <P>
+<P>
+where the constant is based on empirical data and the buoyancy force was found to be negligible. Levy's fundamental assumption was that the temperature at the tip of bubble, with size  <IMG WIDTH=19 HEIGHT=24 ALIGN=MIDDLE ALT="tex2html_wrap_inline5222" SRC="img268.gif"  > , should be at least the saturation temperature,  <IMG WIDTH=22 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline4283" SRC="img12.gif"  > .  This superheat temperature,  <IMG WIDTH=74 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline5226" SRC="img269.gif"  > , was then found by using the universal temperature profile relation between  <IMG WIDTH=18 HEIGHT=24 ALIGN=MIDDLE ALT="tex2html_wrap_inline5228" SRC="img270.gif"  >  and  <IMG WIDTH=19 HEIGHT=24 ALIGN=MIDDLE ALT="tex2html_wrap_inline5222" SRC="img268.gif"  > .
+<P> <IMG WIDTH=500 HEIGHT=16 ALIGN=BOTTOM ALT="equation2537" SRC="img271.gif"  > <P>
+<P>
+<P> <IMG WIDTH=500 HEIGHT=36 ALIGN=BOTTOM ALT="equation2547" SRC="img272.gif"  > <P>
+<P>
+<P> <IMG WIDTH=500 HEIGHT=36 ALIGN=BOTTOM ALT="equation2559" SRC="img273.gif"  > <P>
+<P>
+<P> <IMG WIDTH=500 HEIGHT=37 ALIGN=BOTTOM ALT="equation2570" SRC="img274.gif"  > <P>
+<P>
+Now using the local energy balance one can relate the local bulk temperature,  <IMG WIDTH=33 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline5232" SRC="img275.gif"  > , to the superheat temperature difference at location B,
+<P> <IMG WIDTH=500 HEIGHT=38 ALIGN=BOTTOM ALT="equation2584" SRC="img276.gif"  > <P>
+<P>
+Then the energy balance along the length of the channel can be used to find the axial location of bubble departure,  <IMG WIDTH=14 HEIGHT=12 ALIGN=MIDDLE ALT="tex2html_wrap_inline5234" SRC="img277.gif"  > , 
+<P> <IMG WIDTH=500 HEIGHT=34 ALIGN=BOTTOM ALT="equation2597" SRC="img278.gif"  > <P>
+<P>
+The final term in the Levy model for  <IMG WIDTH=74 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline5226" SRC="img269.gif"  >  and  <IMG WIDTH=32 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5238" SRC="img279.gif"  >  to determine is tw given by
+<P> <IMG WIDTH=500 HEIGHT=34 ALIGN=BOTTOM ALT="equation2607" SRC="img280.gif"  > <P>
+<P>
+where the single phase friction factor is used for this estimate.  Zuber proposed an empirical relation to determine  <IMG WIDTH=89 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline5240" SRC="img281.gif"  >  given by 
+<P> <IMG WIDTH=500 HEIGHT=36 ALIGN=BOTTOM ALT="equation2614" SRC="img282.gif"  > <P>
+<P>
+<P> <IMG WIDTH=500 HEIGHT=37 ALIGN=BOTTOM ALT="equation2622" SRC="img283.gif"  > <P>
+<P>
+  Once the location of vapor bubble departure is determined, one then knows the subcooled boiling region and the total subcooled boiling length; onset of nucleate boiling ( <IMG WIDTH=24 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5176" SRC="img252.gif"  >  Point A, <A HREF="FIGURES/FIG6-4.html">Figure 6.4</A>), vapor bubble departure, ( <IMG WIDTH=32 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5238" SRC="img279.gif"  > , Point B) and saturated boiling point ( <IMG WIDTH=18 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5246" SRC="img284.gif"  > , Point C).  The next step is to model the axial variation in quality and void fraction.  Levy used an semi-empirical approach to estimate the non-equilibrium variation in void and quality.  It was assumed that the &quot;true&quot; mass fraction, <I>x</I>(<I>z</I>), is related to the thermodynamic equilibrium quality,  <IMG WIDTH=35 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline5250" SRC="img285.gif"  > , by the relationship
+<P> <IMG WIDTH=500 HEIGHT=36 ALIGN=BOTTOM ALT="equation2634" SRC="img286.gif"  > <P>
+<P>
+where  <IMG WIDTH=65 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline5252" SRC="img287.gif"  >  is the thermodynamic equilibrium quality at the point of bubble departure (Point B of <A HREF="FIGURES/FIG6-4.html">Fig. 6.4</A>), given by Eqn (6.1).  This simple empirical relationship satisfies the following physical boundary conditions:
+<OL><LI> as  <IMG WIDTH=101 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline5254" SRC="img288.gif"  >  then X' = 0 as well as  <IMG WIDTH=9 HEIGHT=6 ALIGN=BOTTOM ALT="tex2html_wrap_inline4259" SRC="img3.gif"  > ;<LI>  <IMG WIDTH=18 HEIGHT=27 ALIGN=MIDDLE ALT="tex2html_wrap_inline5258" SRC="img289.gif"  >  at point B is also 0:<LI>   <IMG WIDTH=88 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline5260" SRC="img290.gif"  >  for  <IMG WIDTH=60 HEIGHT=16 ALIGN=MIDDLE ALT="tex2html_wrap_inline5262" SRC="img291.gif"  > .
+</OL>
+<P>
+The void fraction is found by the drift flux model given by
+<P> <IMG WIDTH=500 HEIGHT=38 ALIGN=BOTTOM ALT="equation2654" SRC="img292.gif"  > <P>
+<P>
+where  <IMG WIDTH=17 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5264" SRC="img293.gif"  >  is the one-dimensional average inlet velocity of the liquid, <I>Co</I> is the drift flux distribution parameter ( <IMG WIDTH=31 HEIGHT=11 ALIGN=BOTTOM ALT="tex2html_wrap_inline5268" SRC="img294.gif"  >  1.1 chosen by Levy), and  <IMG WIDTH=17 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5270" SRC="img295.gif"  >  is the drift velocity given by
+<P> <IMG WIDTH=500 HEIGHT=40 ALIGN=BOTTOM ALT="equation2666" SRC="img296.gif"  > <P>
+<P>
+One should note that since the void in subcooled boiling is near the wall, the common concept of <I>Co</I> is questionable for this application.
+<P>
+Zuber took a similar approach in which an axial liquid temperature distribution was arbitrarily chosen between the point of zero void fraction,  <IMG WIDTH=14 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5274" SRC="img297.gif"  > , and the point where the non-equilibrium effects become negligible,  <IMG WIDTH=15 HEIGHT=10 ALIGN=BOTTOM ALT="tex2html_wrap_inline5276" SRC="img298.gif"  >  (Point D).  Based on the logic presented previously one could take  <IMG WIDTH=56 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5278" SRC="img299.gif"  >  (Point A) and  <IMG WIDTH=32 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline5238" SRC="img279.gif"  >  (Point B).  The &quot;true&quot; quality is given by 
+<P> <IMG WIDTH=500 HEIGHT=36 ALIGN=BOTTOM ALT="equation2680" SRC="img300.gif"  > <P>
+<P>
+<P> <IMG WIDTH=500 HEIGHT=16 ALIGN=BOTTOM ALT="equation2692" SRC="img301.gif"  > <P>
+<P>
+<P> <IMG WIDTH=500 HEIGHT=32 ALIGN=BOTTOM ALT="equation2697" SRC="img302.gif"  > <P>
+<P>
+Zuber also used the drift flux model to predict the void fraction and used a constant of 1.41 instead of 1.18 in expression for drift velocity.
+<P>
+Either model gives a complete estimate of the subcooled boiling region for location, quality and void.  With this description one can then calculate the two-phase pressure drop in the subcooled region and modify the single phase heat transfer coefficient in the energy balance (Eqns. 6.2 - 6.4) to determine the wall temperature given the heat flux.   In the following section we discuss how to do this with the two-phase heat transfer coefficient.  The treatments of Levy and Zuber fit the experimental data reasonably, and both can be applied to other fluids than water.
+<P>
+<HR><A NAME="tex2html542" HREF="node37.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html540" HREF="node31.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html534" HREF="node35.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html544" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html543" HREF="node37.html">Saturated Boiling and the </A>
+<B>Up:</B> <A NAME="tex2html541" HREF="node31.html">FLOW BOILING HEAT TRANSFER</A>
+<B> Previous:</B> <A NAME="tex2html535" HREF="node35.html">The Onset of Nucleate </A>
+<P><ADDRESS>
+<p><hr><i><b>All contents &#169 Michael L. Corradini</i></b><BR> 
+<I>nsrc-webmaster@loca.neep.wisc.edu</I> <BR>Last Modified: <I>
+Tue Sep  2 15:06:55 CDT 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

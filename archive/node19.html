@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Homogeneous Equilibrium Model for Critical Flow</TITLE>
+<META NAME="description" CONTENT="Homogeneous Equilibrium Model for Critical Flow">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<!--#include file="/util/header.html" -->
+ <A NAME="tex2html350" HREF="node20.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html348" HREF="node17.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html342" HREF="node18.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html352" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html351" HREF="node20.html">Homogeneous Frozen Flow Model </A>
+<B>Up:</B> <A NAME="tex2html349" HREF="node17.html">SOUND SPEED AND CRITICAL </A>
+<B> Previous:</B> <A NAME="tex2html343" HREF="node18.html">Single Phase Critical Flow</A>
+<BR> <P>
+<H1><A NAME="SECTION00720000000000000000">4.2. Homogeneous Equilibrium Model for Critical Flow</A></H1>
+<P>
+In single phase flow the critical flow velocity is identical to the fluid sound speed at &quot;choking&quot; (<I>M</I> = 1).  In general it turns out that the identity of the critical flow velocity and the fluid sound speed is not valid for a multiphase flow.  This occurs because the concept of a single sound speed for a mixture of phases loses meaning unless one makes some simplifying assumptions about the fluid phase relationships.  There may actually be more than one sound speed; i.e. one for each phase and one for the mixture depending on the flow pattern and geometry.
+<P>
+	The homogeneous equilibrium model (HEM) for multiphase critical flow is one example where one can make simplifying assumptions and the identity between the critical flow velocity and a mixture sound speed is preserved.  In our discussion we consider a two-phase system for illustration.  The HEM model is based on two major assumptions: (i) the velocity of the phases are equal, and (ii) the phases are in thermodynamic equilibrium.  These assumptions are the same as used for the HEM pressure drop model.  In every respect, once these assumptions are made, the single phase gas dynamic relations for critical flow can be translated to multiphase conditions.  Therefore, for isentropic flow conditions (frictionless and adiabatic) the pressure drop is due solely to acceleration pressure drop which results in
+<P> <IMG WIDTH=500 HEIGHT=32 ALIGN=BOTTOM ALT="equation1482" SRC="img105.gif"  > <P>
+<P>
+where  <IMG WIDTH=7 HEIGHT=6 ALIGN=BOTTOM ALT="tex2html_wrap_inline4787" SRC="img106.gif"  >  is the specific volume of the mixture and the reciprocal of the mixture density for the HEM formulation.  We have already evaluated this partial derivative when considering the HEM pressure drop as
+<P> <IMG WIDTH=500 HEIGHT=32 ALIGN=BOTTOM ALT="equation1488" SRC="img107.gif"  > <P>
+<P>
+where the partial derivatives are at constant enthalpy under frictionless conditions.
+<P>
+	One can use this expression to find the HEM mixture sound speed by multiplying by the mixture specific volume  <IMG WIDTH=100 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline4789" SRC="img108.gif"  >  and taking the square root
+<P> <IMG WIDTH=500 HEIGHT=32 ALIGN=BOTTOM ALT="equation1501" SRC="img109.gif"  > <P>
+<P>
+<A HREF="FIGURES/FIG4-3.html">Figure 4.3</A> illustrates how this sound speed varies with gas content for an air-water system at atmospheric pressure.  Notice that the mixture sound speed falls dramatically to less than 100 m/s with a small amount of gas present.  One must keep in mind that this is an idealized model and that transmission of pressure waves may occur at higher speeds in the real system but at lower amplitudes, because the actual flow is not completely homogeneous and each phase has a characteristic sound speed which is higher.
+<P>
+	In using this expression to find the critical mass velocity it is necessary to evaluate the indicated partial derivatives at the outlet conditions (e.g., pressure, quality) where &quot;choking&quot; occurs.  One must then work back from the outlet conditions to the stagnation conditions.  Usually this involves an iterative procedure even though it is analytical, or numerical integration.  A straight forward procedure is presented below for a two-phase liquid-vapor system.
+<P>
+	To find the critical mass velocity,  <IMG WIDTH=30 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline4791" SRC="img110.gif"  > , and the associated critical pressure ratio,  <IMG WIDTH=13 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline4779" SRC="img103.gif"  > , at and below which it occurs one could produce the complete curve of  <IMG WIDTH=66 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline4795" SRC="img111.gif"  >  (<A HREF="FIGURES/FIG4-4.html">Figure 4.4</A>).  Since the flow is isentropic the entropy at the outlet equals the stagnation entropy.  Thus one chooses a downstream outlet pressure,  <IMG WIDTH=13 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline4755" SRC="img88.gif"  > , which determines the saturation entropies,  <IMG WIDTH=12 HEIGHT=13 ALIGN=MIDDLE ALT="tex2html_wrap_inline4799" SRC="img112.gif"  >  and  <IMG WIDTH=12 HEIGHT=13 ALIGN=MIDDLE ALT="tex2html_wrap_inline4801" SRC="img113.gif"  > .  The equilibrium thermodynamic quality at the outlet is then
+<P> <IMG WIDTH=500 HEIGHT=35 ALIGN=BOTTOM ALT="equation1523" SRC="img114.gif"  > <P>
+<P>
+which then defines the enthalpy and specific volume at the outlet
+<P> <IMG WIDTH=500 HEIGHT=15 ALIGN=BOTTOM ALT="equation1531" SRC="img115.gif"  > <P>
+<P>
+<P> <IMG WIDTH=500 HEIGHT=15 ALIGN=BOTTOM ALT="equation1537" SRC="img116.gif"  > <P>
+<P>
+The mass velocity for a particular pressure is found by an energy balance as
+<P> <IMG WIDTH=500 HEIGHT=29 ALIGN=BOTTOM ALT="equation1544" SRC="img117.gif"  > <P>
+One simply reduces the outlet receiver pressure from  <IMG WIDTH=14 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline4757" SRC="img89.gif"  >  until the maximum <I>G</I> is calculated at  <IMG WIDTH=13 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline4779" SRC="img103.gif"  > .  For all pressures below this critical pressure the flow is choked as is the case for single phase flow.  One should note that  <IMG WIDTH=13 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline4779" SRC="img103.gif"  >  is not a simple function of the thermodynamic state of the system as for a perfect gas and can vary widely for any particular set of stagnation conditions.
+<P>
+	The accuracy of the HEM model will be discussed later in comparison to some particular data.  In general though, let us simply say that the HEM critical flow model has similar limitations as the HEM pressure drop model when the density ratio is large (low pressure when relative velocity is important) and also at low quality (when the nonequilibrium effect is important).  As the stagnation pressure and quality increases the HEM prediction improves.  Also as the outlet pipe length to diameter ratio increases the HEM model prediction improves, allowing more time for attainment of equilibrium; however one must then include the effect of pipe friction.  One should also remember that the stagnation conditions ought to be representative of a homogeneous geometry (dispersed well-mixed) for the HEM model to successfully estimate the outlet flow.  If the initial stagnation condition is better represented by stratified phases rather than co-dispersed phases, one might expect the HEM model not to initially give a reliable estimate until flashing and its induced mixing disperses the phases.  More likely depending on the location of the pipe single phase flow would first occur followed by flashing and then the two-phase flow.  For stratified conditions with short tubes nonequilibrium might be considered.  A bounding nonequilibrium model is discussed in the next section.
+<P>
+</U><HR><A NAME="tex2html350" HREF="node20.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html348" HREF="node17.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html342" HREF="node18.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html352" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html351" HREF="node20.html">Homogeneous Frozen Flow Model </A>
+<B>Up:</B> <A NAME="tex2html349" HREF="node17.html">SOUND SPEED AND CRITICAL </A>
+<B> Previous:</B> <A NAME="tex2html343" HREF="node18.html">Single Phase Critical Flow</A>
+<P><ADDRESS>
+<p><hr><i><b>All contents &#169 Michael L. Corradini</i></b><BR> 
+<I>nsrc-webmaster@loca.neep.wisc.edu</I> <BR>Last Modified: <I>
+Tue Sep  2 15:06:55 CDT 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

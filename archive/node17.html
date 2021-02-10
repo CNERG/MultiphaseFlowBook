@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>SOUND SPEED AND CRITICAL FLOW</TITLE>
+<META NAME="description" CONTENT="SOUND SPEED AND CRITICAL FLOW">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<!--#include file="/util/header.html" -->
+ <A NAME="tex2html320" HREF="node18.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html318" HREF="main.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html312" HREF="node16.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html322" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html321" HREF="node18.html">Single Phase Critical Flow</A>
+<B>Up:</B> <A NAME="tex2html319" HREF="main.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html313" HREF="node16.html">Void Fraction Prediction with </A>
+<BR> <P>
+<H1><A NAME="SECTION00700000000000000000">4. SOUND SPEED AND CRITICAL FLOW</A></H1>
+<P>
+Critical flow (sometimes called &quot;choked flow&quot;) is important for many industrial applications involving multiphase flow.  These applications include the design of throttling valves for refrigeration systems, bypass systems for steam power plants, emergency relief in chemical and nuclear plants and other diverse applications.  Most of the research and development in the recent past has been in regard to plant safety analyses.  Our discussion of critical flow is based on experimental and model results with this latter subject as the main application, although the models are completely general and applicable to other design issues.
+<P>
+	One of the observations made in examining multiphase pressure drop was that one could determine if the multiphase flow could be considered compressible or incompressible by examining the acceleration terms in the pressure gradient expression.  For instance, in the HEM model for the pressure gradient it was noted that the equation denominator could be considered as  <IMG WIDTH=55 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline4751" SRC="img87.gif"  >  where <I>M</I> is a local two-phase flow Mach number; i.e., ratio of mass velocity to a two-phase &quot;acoustic&quot; mass velocity.  Analogous to single phase flow, as the Mach number approaches unity the flow must be considered compressible and the overall pressure gradient increases; asymptotically approaching an infinite gradient (shock wave) as the Mach number equals one.  Thus, as in single phase flow, there is a relationship in this multiphase flow model between the maximum mass flux through a duct and the local sound speed.  This maximum mass flux is identified as the critical flow (or choked flow&quot;) of the system, and is the major topic of this section.
+<P>
+	These notes will begin with a discussion of single phase sound speed and critical flow (&quot;choking&quot;).  This logically leads us to consider the homogeneous equilibrium model for sound speed and for the multiphase critical flow.  Finally, more sophisticated models considering nonequilibrium effects and the effects of phase velocity differences  are discussed.  We end the paper with a discussion of these models assumptions and recommendations for usage.  In this development, as in the discussion of pressure drop, we assume the flow is approximately one-dimensional.  This simplifying assumption allows us to develop analytical expressions and is approximately valid in realistic situations if the change in flow area is not abrupt.  Many practical applications can involve at least two-dimensional flow.  At worst the one-dimensional assumption affords one a way to estimate behavior in more complex multi-dimensional systems to bound the expected behavior.
+<P>
+<HR>
+<br> 
+<dd><A NAME="tex2html323" HREF="node18.html#SECTION00710000000000000000">4.1. Single Phase Critical Flow</A>
+<dd><A NAME="tex2html324" HREF="node19.html#SECTION00720000000000000000">4.2. Homogeneous Equilibrium Model for Critical Flow</A>
+<dd><A NAME="tex2html325" HREF="node20.html#SECTION00730000000000000000">4.3. Homogeneous Frozen Flow Model for Critical Flow</A>
+<dd><A NAME="tex2html326" HREF="node21.html#SECTION00740000000000000000">4.4. Separated Flow Model for Critical Flow</A>
+<dd><A NAME="tex2html327" HREF="node22.html#SECTION00750000000000000000">4.5. Fluids Other Than Water For Separated Flow Model</A>
+<dd><A NAME="tex2html328" HREF="node23.html#SECTION00751000000000000000">4.6.The Physical Basis of Choked Two Phase Flow</A>
+<dd><A NAME="tex2html329" HREF="node24.html#SECTION00760000000000000000">4.7. Advanced Computational Models</A>
+<dd><A NAME="tex2html330" HREF="node25.html#SECTION00770000000000000000">4.8. Observations</A>
+<p>
+<HR><A NAME="tex2html320" HREF="node18.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html318" HREF="main.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html312" HREF="node16.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html322" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html321" HREF="node18.html">Single Phase Critical Flow</A>
+<B>Up:</B> <A NAME="tex2html319" HREF="main.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html313" HREF="node16.html">Void Fraction Prediction with </A>
+<P><ADDRESS>
+<p><hr><i><b>All contents &#169 Michael L. Corradini</i></b><BR> 
+<I>nsrc-webmaster@loca.neep.wisc.edu</I> <BR>Last Modified: <I>
+Tue Sep  2 15:06:55 CDT 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

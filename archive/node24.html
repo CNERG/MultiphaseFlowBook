@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Advanced Computational Models</TITLE>
+<META NAME="description" CONTENT="Advanced Computational Models">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<!--#include file="/util/header.html" -->
+ <A NAME="tex2html404" HREF="node25.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html402" HREF="node17.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html396" HREF="node23.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html406" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html405" HREF="node25.html">Observations</A>
+<B>Up:</B> <A NAME="tex2html403" HREF="node17.html">SOUND SPEED AND CRITICAL </A>
+<B> Previous:</B> <A NAME="tex2html397" HREF="node23.html">The Physical Basis of </A>
+<BR> <P>
+<H1><A NAME="SECTION00760000000000000000">4.7. Advanced Computational Models</A></H1>
+<P>
+The more general case for critical flow involves consideration of heat addition, friction along the pipe wall and non-equilibrium effects in velocity and temperature.  Examples of such models are given in References 20-22.  The complete set of steady-state conservation equations can be written as (see Reocreux, Ref. 23).
+<P> <IMG WIDTH=500 HEIGHT=33 ALIGN=BOTTOM ALT="equation1704" SRC="img135.gif"  > <P>
+<P>
+<P> <IMG WIDTH=500 HEIGHT=30 ALIGN=BOTTOM ALT="equation1713" SRC="img136.gif"  > <P>
+<P>
+<P> <IMG WIDTH=500 HEIGHT=29 ALIGN=BOTTOM ALT="equation1725" SRC="img137.gif"  > <P>
+<P>
+where  <IMG WIDTH=7 HEIGHT=6 ALIGN=BOTTOM ALT="tex2html_wrap_inline4865" SRC="img138.gif"  >  is the wall shear stress and <I>q</I>' is the linear heat addition rate, both externally imposed.  In addition one also has the equation of state for the fluid
+<P> <IMG WIDTH=500 HEIGHT=15 ALIGN=BOTTOM ALT="equation1737" SRC="img139.gif"  > <P>
+<P>
+<P> <IMG WIDTH=500 HEIGHT=15 ALIGN=BOTTOM ALT="equation1740" SRC="img140.gif"  > <P>
+<P>
+As an example for an ideal gas one can substitute the algebraic expressions for pressure, <I>p</I>, and enthalpy, <I>i</I>, into the balance equations and we write eqns 28-30 in matrix form 
+<P> <IMG WIDTH=500 HEIGHT=30 ALIGN=BOTTOM ALT="equation1744" SRC="img141.gif"  > <P>
+<P>
+with  <IMG WIDTH=162 HEIGHT=57 ALIGN=MIDDLE ALT="tex2html_wrap_inline4873" SRC="img142.gif"  >          <IMG WIDTH=101 HEIGHT=57 ALIGN=MIDDLE ALT="tex2html_wrap_inline4875" SRC="img143.gif"  > , and  <IMG WIDTH=72 HEIGHT=57 ALIGN=MIDDLE ALT="tex2html_wrap_inline4877" SRC="img144.gif"  > 
+<P>
+	Notice that the frictional, heat addition and area change terms appear as external sources in the expression on the right-hand side.  Reocreux [23] used this example to indicate that the momentum and heat transfer relations are algebraic and not included in the derivative terms.  The solution to this matrix is found by inverting the matrix <B>B</B>.  This can only be done if the determinant of <B>B</B> is non-zero.  Mathematically, when the determinant is zero this is a condition when the pressure gradient is infinite and we have reached the critical flow condition, and solve for the velocity which it achieves.  For the case of an ideal gas we recover the same results as discussed previously (eqns 4.5 to 7).
+<P>
+	This suggests the difficulties that arise when two phases occupy the channel.  In single phase flow <I>dA</I>/<I>A</I>,  <IMG WIDTH=7 HEIGHT=6 ALIGN=BOTTOM ALT="tex2html_wrap_inline4865" SRC="img138.gif"  >  and <I>q</I>' were imposed externally upon the fluid.  In two phase flow consider how these quantities will be partitioned between the two phases; i.e., how will the flow area be occupied by the two phases and how will the shear forces be distributed among the two phases? This last consideration will determine the void fraction.  Also how energy will be distributed between the two phases; a thermal equilibrium consideration?  Thus we can sense that mechanical and thermal non-equilibrium considerations will be important in relation to two-phase critical flow.
+<P>
+  	Giot and Meunier [24] have shown that the Moody and Fauske models outlined above are equivalent to requiring that the determinant of the three mixture conservation equations, augmented by a fourth condition involving a linear combination of the space derivaties of <I>S</I>, <I>p</I>, <I>X</I>, and  <IMG WIDTH=13 HEIGHT=13 ALIGN=MIDDLE ALT="tex2html_wrap_inline4597" SRC="img61.gif"  >  vanishes.  Thus they find again the relationship between critical flows and the vanishing determinant of the conservation equations for single-phase compressible flows.
+<P>
+	In non-equilibrium models, one needs a mechanistic description of the mass and energy exchanges between the two phases.  For example, one can use the theory of heat transfer limited bubble growth to arrive at a vapor generation law needed to close the system of equations in this case [21, 22].  Many models addressing the various aspects briefly touched upon above have appeared in the literature over the years.  There is yet no model that gives perfect agreement with all the data and there will probably be none in the future either.  Indeed, certain non-equilibrium aspects, such as nucleation on the walls and flow-pattern dependent velocity ratios depend on secondary variables (such as wall roughness and gas content of the liquid in the case of nucleation) and are difficult or impossible to quantify in general.
+<P>
+	Non-equilibrium models can be either empirical, mechanistic (i.e. based on a phenomenological description of the vapor generation mechanisms), or based on two-fluid models incorporating automatically the interfacial heat and mass exchange mechanisms.
+<P>
+	In empirical models non-equilibrium vapor generation is handled by introducing, for example, a coefficient that allows only a fraction of the equilibrium vapor generation to occur.  Relaxation models for phase change have also been proposed by several authors; in this case the actual vapor generation is proportional to the difference between the actual quality and the equilibrium quality.
+<P>
+	Mechanistic models attempt to model the mechanisms of nucleation and interfacial phase change.  There are inherent difficulties, however, in all critical flow models that become evident when this approach is used.  For example, the rate of nucleation depends on the roughness and other properties of the walls as well as on the amount of dissolved air in the system; such effects are very difficult to quantify, as already mentioned.  Introducing a grid in the flow area promoted nucleation and lowered the superheating of the liquid with significant impact on the critical flow characteristics during the Moby-Dick experiments [25].  Often the realism introduced into the model by modeling of the physical phenomena is shadowed by totally unreasonable values of certain parameters that must be used to fit the experimental data.
+<P>
+	The six-equation formulation provides automatically the features necessary for describing departures from mechanical and thermal non equilibrium.  The methodology that can be used to detect the presence of critical flow conditions when the six equations are being integrated is well understood [20, 24, 26-28].  In a way quite analogous to the one shown previously for single-phase gas flows, one finds that critical flow occurs when the determinant of the coefficients of the solution variables becomes zero at a certain location.  Regarding modeling of the physics, however, there are difficulties with this approach also since we do now know yet the correct form of certain terms that enter into the conservation equations and influence the results significantly; the virtual mass terms have such an effect as well as the mass exchange rate [22].
+<P>
+	In spite of the fact that the two-fluid 6-equation models are capable of predicting the occurrence of a critical flow condition, for several practical reasons (computational speed, singularity of the solutions near the critical point, not knowing a priori the location of the choking point, fine nodalization requirements, the numerical schemes used, etc.) a separate choking model is necessary.
+<P>
+	This separate critical flow criterion is derived from an analysis of the characteristics of the governing;  if the real part of all the characteristics is non-negative, no information can propagate upstream, and the exit pressure cannot affect any more the flow upstream from the break.  The critical velocity is thus calculated from an algebraic equation obtained by requiring that the largest characteristic velocity be equal to zero.  For system calculations, the critical flow condition derived in this fashion is applied at the choking point whose location is known a priori.
+<P>
+	The NRC computer codes (RELPA5/MOD2, TRAC/BF1 and TRAC-PFI/MOD1) use a simplified two-phase choking criterion that is based on the assumption of thermal equilibrium between the phases, at variance with the physics reality.  The so-called &quot;RELAP5 two-phase choking criterion&quot; (used also in TRAC-BF1) [22] is derived from such a formulation (4-equation, thermal equilibrium) with additional simplifications for obtaining an explicit expression for the characteristic roots; choking occurs when a hybrid mixture velocity becomes equal to the homogeneous equilibrium (HE) sound velocity.  In this model, the arbitrary simplifications needed to arrive at the final mixture velocity have no justification other than the fact that they yield good results.
+<P>
+	A different approach is used in CATHARE where the critical condition is derived from the basic thermal-hydraulic model.  CATHARE [30] uses a full 6-equation model and the critical condition is found by solving a sixth-degree polynomial that retains all the terms (velocity and temperature difference between the phases are both considered).  The code has also the capability, however, of integrating the conservation equations all the way through a critical flow condition.  One should note, however, that CATHARE uses a fully implicit numerical scheme that allows use of very fine meshes near the break without consequence on the time step.
+<P>
+<HR><A NAME="tex2html404" HREF="node25.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html402" HREF="node17.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html396" HREF="node23.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html406" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html405" HREF="node25.html">Observations</A>
+<B>Up:</B> <A NAME="tex2html403" HREF="node17.html">SOUND SPEED AND CRITICAL </A>
+<B> Previous:</B> <A NAME="tex2html397" HREF="node23.html">The Physical Basis of </A>
+<P><ADDRESS>
+<p><hr><i><b>All contents &#169 Michael L. Corradini</i></b><BR> 
+<I>nsrc-webmaster@loca.neep.wisc.edu</I> <BR>Last Modified: <I>
+Tue Sep  2 15:06:55 CDT 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Separated Flow Model</TITLE>
+<META NAME="description" CONTENT="Separated Flow Model">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<BODY BGCOLOR=#ffffff LINK=#1a0df5 VLINK=#ff789e ALINK=#00ff80 LANG="EN">
+ <A NAME="tex2html278" HREF="node14.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html276" HREF="node11.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html270" HREF="node12.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html280" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html279" HREF="node14.html">Two-Fluid Model</A>
+<B>Up:</B> <A NAME="tex2html277" HREF="node11.html">MULTIPHASE FORMULATION AND PRESSURE </A>
+<B> Previous:</B> <A NAME="tex2html271" HREF="node12.html">Homogeneous Equilibrium Model</A>
+<BR> <P>
+<H1><A NAME="SECTION00620000000000000000">3.2. Separated Flow Model</A></H1>
+<P>
+In the separated flow model the restriction on equal phase velocities is relaxed and one now models the momentum exchange between the phases and the channel separately with different velocities, e.g., vapor and liquid velocities.  The relaxation of equal velocities is most important when the densities between the phases are quite different in the presence of a gravitational potential field or large pressure gradients.  Given a density difference, buoyancy effects tend to induce a drift velocity of the lighter phase in the heavier phase.  One measure of this density ratio is the Atwood ratio and is defined in <a href="img80.gif">Table 3.1.</A> 
+One notices that as this density ratio approaches zero the HEM model would become more valid because the drift velocity would be reduced as the buoyancy of the lighter phase diminishes.  The remaining assumptions of equal temperatures and pressures between the phases are usually retained in most applications.  This is because it is usually felt the rates of mass and energy exchange are large enough to promote equilibrium.  Once again a check with a more detailed model is recommended as the analysis proceeds to verify this assumption.
+<P>
+The governing equations for the separated flow model are given in <a href="TABLES/TABLE3-3.html">Table 3.3.</A>  Similar to <a href="TABLES/TABLE3-2.html">Table 3.2</A> we use the 1-D area averaged formulation for two phases.  There are two important differences in the equations that one should notice.  First, there are now two momentum equations.  In each equation there appears a term which represents the friction force at the phase interface caused by the relative velocity between the phases.  If the equations are solved separately then one must develop a constitutive relation model for this momentum transfer term.  Second, the properties are not averaged exclusively using the void fraction and density of the phases, but require a separate constitutive relation (Eq. 10 in <a href="TABLES/TABLE3-3.html">Table 3.3</A>) that relates the volume fraction to the flowing mass fraction.  Traditionally the separated flow model has been used primarily for calculating the pressure drop in a flow channel.  In this application the usual method of solution is to add the phase momentum equations and eliminate the need to model the interfacial shear stress,  <IMG WIDTH=10 HEIGHT=12 ALIGN=MIDDLE ALT="tex2html_wrap_inline4473" SRC="img28.gif"  > .  Then one empirically correlates to obtain a model for the frictional pressure drop for the channel,  <IMG WIDTH=14 HEIGHT=12 ALIGN=MIDDLE ALT="tex2html_wrap_inline4475" SRC="img29.gif"  > , and for the slip ratio,  <IMG WIDTH=32 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline4477" SRC="img30.gif"  > , or velocity differences  <IMG WIDTH=54 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline4479" SRC="img31.gif"  >  between the phases as a function of volume fraction and properties.  The model for  <IMG WIDTH=14 HEIGHT=12 ALIGN=MIDDLE ALT="tex2html_wrap_inline4475" SRC="img29.gif"  >  is substituted back in the combined momentum equation and the algebraic correlation for  <IMG WIDTH=32 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline4477" SRC="img30.gif"  >  or  <IMG WIDTH=54 HEIGHT=23 ALIGN=MIDDLE ALT="tex2html_wrap_inline4479" SRC="img31.gif"  >  is used as a substitute for the second balance equation.  These types of models are described in more detail when one considers multiphase pressure drop.   The drift flux model is a special case of such models, because it is physically based as it predicts void fractions given velocity difference.
+<P>
+<HR><A NAME="tex2html278" HREF="node14.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html276" HREF="node11.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html270" HREF="node12.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html280" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html279" HREF="node14.html">Two-Fluid Model</A>
+<B>Up:</B> <A NAME="tex2html277" HREF="node11.html">MULTIPHASE FORMULATION AND PRESSURE </A>
+<B> Previous:</B> <A NAME="tex2html271" HREF="node12.html">Homogeneous Equilibrium Model</A>
+<P>
+<p><hr>
+<i><b>All contents &#169 Michael L. Corradini</i></b><BR> 
+<ADDRESS>
+<I>nsrc-webmaster@loca.neep.wisc.edu</I> <BR>Last Modified: <I>
+Mon Aug  4 00:56:50 CDT 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>FLOW PATTERNS AND FLOW-PATTERN TRANSITIONS</TITLE>
+<META NAME="description" CONTENT="FLOW PATTERNS AND FLOW-PATTERN TRANSITIONS">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="main.css">
+</HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (! navigator.mimeTypes["application/pdf"] || navigator.mimeTypes["application/pdf"].enabledPlugin == null) {
+        if (confirm("\nThe tables in this page are best viewed\nwith the Adobe Acrobat Reader.\nDo you wish to download the Acrobat Reader now?")) {
+                aarWindow=window.open("http://www.adobe.com/prodindex/acrobat/readstep.html", "", "toolbar=no,location=yes,directories=no,status=yes,menubar=yes");
+        }
+}
+// -->
+</SCRIPT>
+<BODY BGCOLOR=#ffffff LINK=#1a0df5 VLINK=#ff789e ALINK=#00ff80 LANG="EN">
+ <A NAME="tex2html240" HREF="node11.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html238" HREF="main.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html232" HREF="node9.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html242" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html241" HREF="node11.html">MULTIPHASE FORMULATION AND PRESSURE </A>
+<B>Up:</B> <A NAME="tex2html239" HREF="main.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html233" HREF="node9.html">Condensation</A>
+<BR> <P>
+<H1><A NAME="SECTION00500000000000000000">2. FLOW PATTERNS AND FLOW-PATTERN TRANSITIONS</A></H1>
+<P>
+Multiphase flow is characterized by the existence of interfaces between the phases and discontinuities of associated properties.  Single-phase flow can be classified according to the external geometry of the flow channel as well as the 'character' of the flow; i.e., laminar - following streamlines, or turbulent - exhibiting fluctuations and chaotic motions. In contrast multiphase flow is classified according to the internal phase distributions or &quot;flow patterns&quot; or &quot;regimes&quot;.  For a two-phase mixture of a gas or vapor and a liquid flowing together in a channel, different internal flow geometries or structures can occur depending on the size or orientation of the flow channel, the magnitudes of the gas and liquid flow parameters, the relative magnitudes of these flow parameters, and on the fluid properties of the two phases.  A wide variety of multiphase flow patterns has been observed and identified in the literature.  For example, Rouhani and Sohel (1983) cited a survey which suggested 84 different flow-pattern labels used in the literature.  These variations are due to the subjective nature of flow-pattern definitions and partly to a variety of names given to essentially the same geometric flow patterns.  In reality one finds a few basic flow patterns with associated transitions.
+<P>
+The rate of exchange of mass, momentum and energy between gas and liquid phases as well as between any multiphase mixture and the external boundaries depends on these internal flow geometries and interfacial area; hence is dependent on flow-pattern.  For instance, the relationships for pressure drop and heat transfer are likely to be different for a dispersed flow consisting of bubbles in a liquid (bubbly flow) than for a separated flow consisting of a liquid film on a channel wall with a central gas core (annular flow).  This leads to the use of flow-pattern dependent models for mass, momentum and energy transfer, together with appropriate flow-pattern transition criteria.  Given the existence of any one pattern, it is possible to model the two-phase flow field and to select a proper set of flow-pattern dependent equations so as to predict the important process design parameters.  However, the central task is to predict which flow-pattern will exist under any set of operating conditions as well as to predict the value of characteristic fluid and flow parameters (e.g., bubble or droplet size) at which the transition from one flow-pattern to another will take place.  Therefore, in order to accomplish a reliable design of gas-liquid systems such as pipe lines, evaporation and condensers, a prior knowledge of the flow-pattern is required.<BR>
+<P>
+  The common practice in representing flow-pattern data is to classify the flow patterns by visual or other means and to plot the data as a two-dimensional flow-pattern map in terms of particular system parameters.  Beginning with the early flow-pattern maps, such as those proposed by Bergelin and Gazley (1949) and Kosterin (1949), there has been an on-going discussion on the selection of appropriate pairs of parameters to represent the flow-pattern transition boundaries.  There is a wide variety of flow-pattern maps for two-phase flow in 
+channels.  A large number of different parameters have been used to present the experimental data in two-dimensional coordinates based on the superficial velocities,  <IMG WIDTH=12 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline563" SRC="img16.gif"  >  and  <IMG WIDTH=12 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline565" SRC="img17.gif"  >  or  <IMG WIDTH=15 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline567" SRC="img18.gif"  >  and  <IMG WIDTH=15 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline569" SRC="img19.gif"  > .  A good example are the empirical flow regime maps by Baker (1955) for horizontal flow and Hewitt and Roberts (1969) for vertical flow, which are illustrated in Figures <a href="FIGURES/FIG2-1.html">2.1</a> and <a href="FIGURES/FIG2-2.html">2.2.</a> Note that both of these maps are for small tubes; i.e., on the order of centimeters.  Some investigators have attempted to correlate the transition boundaries by a single pair of non-dimensional groups, in the hope that the results would apply to pipe sizes, and fluid and flow parameters other than those of the experimental data used to locate curves.  Tables <a href="ADOBE/Table2-1.PDF">2.1</a>, <a href="ADOBE/Table2-2.PDF">2.2</a>, <a href="ADOBE/Table2-3.PDF">2.3</a> and <a href="ADOBE/Table2-4.PDF">2.4</a> present suggestions of these parameters together with specific references for their applicability in horizontal and vertical pipe flows.<BR>
+<P>
+  The main task is to group together the basic flow structures and define a few basic patterns.  This is by no means well defined and indeed many flow patterns exist as individual researchers group the flow patterns somewhat differently depending on their own interpretations.  Basically the attitude of most practitioners is to minimize the number of flow pattern groups and to group together the flow structures that has basically the same character pertaining to the distribution of the interfaces.  An example of this approach is given in multifluid hydrodynamic models such as <B><a href="http://trans4.neep.wisc.edu/NSRC/texas/">TEXAS</A></B> (Chu, 1986, 1996) where only a bubbly flow or droplet flow is considered for large flow channels (See <a href="FIGURES/FIG2-3.html">Figure 2.3.</a>).  As noted in the introduction dispersed flow patterns and stratified flow patterns are the two  major classifications, with transitional patterns identified between these two groups.
+<P>
+<P><P> <a href="ADOBE/Table2-1.PDF"><IMG ALIGN=BOTTOM ALT="sidewaystable155" SRC="img20new.gif"  ></A> <P><P>
+<P>
+<P><P> <a href="ADOBE/Table2-2.PDF"><IMG ALIGN=BOTTOM ALT="sidewaystable208" SRC="img21new.gif"  ></A> <P><P>
+<P>
+<P><P> <a href="ADOBE/Table2-3.PDF"><IMG ALIGN=BOTTOM ALT="sidewaystable289" SRC="img22new.gif"  ></A> <P><P>
+<P>
+<P><P> <a href="ADOBE/Table2-4.PDF"><IMG ALIGN=BOTTOM ALT="sidewaystable329" SRC="img23new.gif"  ></A> <P><P>
+<P>
+<B>References</B>
+<P>
+J.N. Al-Sheikh,  D.E. Saunders and R.S. Brodkey, &quot;Prediction of Flow Patterns in Horizontal Two-Phase Pipe Flow,&quot; <I>Can J Chem Engng</I>, 48, pp 21-29, 1970. <BR> 
+G.E. Alves, &quot;Cocurrent Liquid-Gas Flow in a Pipeline Contractor,&quot; <I>Chem Engng Prog</I>, 50, pp 449-456, 1954.<BR> 
+D. Baker, &quot;Simultaneous Flow of Oil and Gas,&quot; <I>Oil and Gas J</I>, 53, pp 183-195 1954.<BR> 
+O.P. Bergelin,  and C. Gazley, Jr., &quot;Cocurrent Gas-Liquid Flow, I. Flow in Horizontal Tubes,&quot; <I>Proc Heat Transfer and Fluid Mech. Inst.</I>, pp 5-18, Berkeley CA, 1949.<BR> 
+C.C. Chu, &quot;TEXAS-A 1-D Model for Fuel-Coolant Interactions,&quot; UWRSR-36, University of Wisconsin, 1986.<BR> 
+C.C. Chu et al, &quot;TEXAS Computer Code Manual,&quot; http://www.engr.wisc.edu, 1996.<BR> 
+B.A. Eaton, D.E. Andrews, C.R. Knowles, I.H. Sillberberg and K.E. Broon, &quot;The Prediction of Flow Patterns, Liquid Holdup and Pressure Losses Occurring During Continuous Two-Phase Flow in Horizontal Pipelines,&quot;  <I>J. Petrol Technol</I>, 19, pp 815-828, 1967.<BR> 
+W.C. Galegar, W.B. Stovall and R.L. Huntington, &quot;More Data on Two-Phase Vertical Flow,&quot; <I>Petroleum Refiner</I>, 33, pp 208-217, 1954.<BR> 
+G.W. Govier,  and K. Aziz, &quot;The Flow of Complex Mixtures in Pipes,&quot; Van Nostrand Reinhold, New York, 1972.<BR> 
+G.F. Hewitt and D.N. Robertson, &quot;Studies of Two-Phase Flow Patterns by Simultaneous X-ray and Flash Photography,&quot; <I>Rept AERE-M2159</I>, UKAEA, Harwell, 1969.<BR> 
+C.S. Hoogendorn, &quot;Gas-Liquid Flow in Horizontal Pipes,&quot; <I>Chem Engng Sci</I>, 9, pp 205-217, 1959.<BR> 
+C.J. Hoogendorn,  and A.A. Beutelaar, &quot;Effect of Gas Density and Gradual Vaporization on Gas-Liquid Flow in Horizontal Lines,&quot; <I>Chem Engng Sci</I>, 16, pp 208-215, 1961.<BR> 
+H.A. Johnson,  and A. H. Abou-Sabe, &quot;Heat Transfer and Pressure Drop for Turbulent Flow of Air-Water Mixtures in a Horizontal Pipe,&quot; <I>Trans ASME</I>, 74, pp 977-987, 1952.<BR> 
+C.R. Knowles, The Effects of Flow Patterns of Pressure Loss in Multiphase Horizontal Flow,&quot; M.S. Thesis, The University of Texas, Austin, 1965.<BR> 
+S.I. Kosterin, &quot;An Investigation of the Influence of Diameter and Inclination of a Tube on the Hydraulic Resistance and Flow Structure of Gas-Liquid Mixtures,&quot; <I>Izvest. Akad</I>, Nauk. USSR, 12, pp 1824-1830, 1949.<BR> 
+B.K. Kozlov, &quot;Forms of Flow of Gas-Liquid Mixtures and Their Stability Limits in Vertical Tubes,&quot; <I>Zhur Tech Fig 24</I>, pp 2285-2288, 1954.<BR> 
+L.Y. Krasiakova, &quot;Some Characteristics of Movements of Two-Phase Mixtures in a Horizontal Pipe,&quot; <I>Zhur Tech Fig 22</I>, p 656, AERE Lib/Trans 695, 1952.<BR> 
+J.M. Mandhane, C.A. Gregory and K. Aziz, &quot;A Flow Pattern Map for Gas-Liquid Flow in Horizontal Pipes,&quot; <I>Int J Multiphase Flow</I>, 1(4), pp 537-554, 1974.<BR> 
+K. Nishigawa, K. Sekoguchi and T. Fukano, &quot;On the Pulsation Phenomena in Gas-Liquid Two-Phase Flow,&quot; Bull. JSME, 12, pp 1410-1416, 1969.<BR> 
+T. Oshinowa and M.E. Charles, &quot;Vertical Two-Phase Flow, 1: Flow-Pattern Correlations&quot;, <I>Can J Chem Engng</I>, 52, pp 25-35, 1974.<BR> 
+S.Z. Rouhani and M.S. Sohel, &quot;Two-Phase Flow Pattern:  A Review of Research Result,&quot; <I>Progress in Nuclear Energy</I>, 11, pp 217-259, 1983.<BR> 
+H.H. Schicht, &quot;Flow Patterns for Adiabatic Two-Phase Flow of Water and Air Within a Horizontal Tube&quot;, <I>Verfahrenstecknik</I>, 3, pp 153-172, 1969.<BR> 
+D. Scott, &quot;Properties of Co-Current Gas-Liquid Flow,&quot; <I>Advances in Chemical Engineering</I>, 4 pp 199-277, Academic Press, New York, 1963.<BR> 
+H.C. Simpson, D.H. Rooney, E. Gratton and F. Al-Samarrel, &quot;Two-Phase Flow in Large Diameter Horizontal Lines,&quot; <I>Paper H6, European Two-Phase Flow Group Meeting</I>, Grenoble, 1977.<BR> 
+P.L. Spedding, and J.J.J. Chen, &quot;A Simplified Method of Determining Flow Pattern Transition of Two-Phase Flow in a Horizontal Pipe,&quot; <I>Int J Multiphase Flow</I>, 7(6), pp 729-731, 1981.<BR> 
+P.L. Spedding, and V.T. Nguyen, &quot;Regime Maps for Air-Water Two-Phase Flow,&quot; <I>Chem Eng Sci</I>, 35, pp 779-793, 1980.<BR> 
+T. Ueda, &quot;Studies of the Flow of Air-Water Mixtures,&quot; Bull. JSME 1(2), pp 139-145, 1958.<BR> 
+J. Weisman, D. Duncan, J. Gibson and T. Crawford, &quot;Effects of Fluid Properties and the Pipe Diameter on Two-Phase Flow Pattern in Horizontal Lines,&quot; <I>Int. J. Multiphase Flow</I>, 5, pp 437-452, 1979.<BR> 
+J. Weisman and S.Y. Kang, &quot;Flow Pattern Transitions in Vertical and Upwardly Inclined Lines,&quot; <I>Int J Multiphase Flow</I>, 7, pp 271-280, 1981.<BR> 
+P.D. White, and R.L. Huntington, &quot;Horizontal Co-Current Two-Phase Flow of Fluid in Pipe Lines,&quot; <I>The Petroleum Engineer</I>, 27(9), p 40, 1958.<BR>
+<P>
+<HR><A NAME="tex2html240" HREF="node11.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://trans4.neep.wisc.edu/NSRC/icons/next_motif.gif"></A> <A NAME="tex2html238" HREF="main.html"><IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://trans4.neep.wisc.edu/NSRC/icons/up_motif.gif"></A> <A NAME="tex2html232" HREF="node9.html"><IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://trans4.neep.wisc.edu/NSRC/icons/previous_motif.gif"></A> <A NAME="tex2html242" HREF="node1.html"><IMG WIDTH=65 HEIGHT=24 ALIGN=BOTTOM ALT="contents" SRC="http://trans4.neep.wisc.edu/NSRC/icons/contents_motif.gif"></A>  <BR>
+<B> Next:</B> <A NAME="tex2html241" HREF="node11.html">MULTIPHASE FORMULATION AND PRESSURE </A>
+<B>Up:</B> <A NAME="tex2html239" HREF="main.html">No Title</A>
+<B> Previous:</B> <A NAME="tex2html233" HREF="node9.html">Condensation</A>
+<P>
+<p><hr>
+<i><b>All contents &#169 Michael L. Corradini</i></b><BR> 
+<ADDRESS>
+<I>nsrc-webmaster@loca.neep.wisc.edu</I> <BR>Last Modified: <I>
+Mon Aug  4 00:56:50 CDT 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

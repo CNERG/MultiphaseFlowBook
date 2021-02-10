@@ -1,0 +1,2883 @@
+\batchmode
+\documentclass[12pt,fleqn]{report}
+\makeatletter
+\usepackage{myrotating}
+\setlength{\topmargin}{.25in}
+\setlength{\oddsidemargin}{.25in}
+\setlength{\textheight}{8.5in}
+\setlength{\textwidth}{6in}
+
+
+
+
+
+\renewcommand {\topfraction}{1.0}
+
+\renewcommand {\textfraction}{0.0}
+
+\newcommand {\degree}[1]{{$^{\circ}$\/}#1}
+
+\makeatother
+\newenvironment{tex2html_wrap}{}{}
+\newwrite\lthtmlwrite
+\def\lthtmltypeout#1{{\let\protect\string\immediate\write\lthtmlwrite{#1}}}%
+\newbox\sizebox
+\begin{document}
+\pagestyle{empty}
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}Q = Q_{f} + Q_{g} = \frac{\dot{m}_{f}}{\rho_{f}} + \frac{\dot{m}_{g}}{\rho_{g}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}X_{i} =  \frac{\dot{m}_{i}}{\Sigma \dot{m}_{i}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}G =  \frac{\dot{m}}{A} = \frac{\dot{m}_{f}}{A} +
+\frac{\dot{m}_{g}}{A} = G\cdot X_{f} +
+G\cdot X_{g} = G_{f} + G_{g} \left[
+\frac{kg}{m^{2} \cdot s} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}j_{i} = \frac{G_{i}}{\rho_{i}}; e.g.,   j_{g} = \frac{G_{g}}{\rho_{g}} = \frac{G\cdot X_{g}}{\rho_{g}} =
+\mbox{v}_{g} \frac{A_{g}}{A} = \mbox{v}_{g} \alpha_{g} \left[ \frac{m^{3}}{m^{2} \cdot s} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{X_{g}}{X_{f}} \equiv \frac{\rho_{g} \mbox{v}_{g} \alpha_{g}}{\rho_{f} \mbox{v}_{f} \alpha_{f}}
+\end{equation}
+}
+
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{chapter}
+{\newpage
+\clearpage
+\samepage \begin{sidewaystable}[hp]
+\begin{minipage}{9.0in}
+
+\begin{tabular}{*{4}{l}}
+\multicolumn{4}{l}{\bf Table 2.2  Flow Pattern Transitions for Horizontal Two-Phase Flow Systems Based on Different Coordinate} \\ 
+\hspace{18mm} \bf {Parameters} &   &   &   \\  [2mm] \hline
+  &  &  &  \\ 
+Flow-Pattern Transition & Choe et al. (1978) & Weisman et al. (1979) &
+Taitel \& Dukler (1976) \\  [3mm] \hline 
+ & & & \\ 
+Stratified Smooth & & $\left( \frac{\sigma}{g\Delta \rho D^2} \right)^{0.2}
+\left( \frac{DG_{g}}{\mu_{g}} \right)^{0.45} = \theta \left( \frac{j_{g}}{j_{f}}
+\right)^{0.16}$ & $\left[ \frac{\rho_{g}j_{g}^{2}j_{f}}{g\Delta \rho v_{f}}
+\right]^{1/2} = f(x)$ \\ 
+Stratified Wavy & & & \\  \hline
+ &  &  &  \\ 
+Stratified & $\left[ \frac{\rho_{g}j_{g}^{2}}{g D \Delta\rho} \right]^{1/2} =
+2.5 \exp[-12 \left( 1-\alpha \right)] + 0.03\alpha$ & $\left [ \frac{j_{g}^{2}}{g
+\Delta\rho} \right]^{1/2} = 0.25 \left( \frac{j_{g}}{j_{f}} \right)^{1.1}$ & \\ 
+Intermittent & & & \\ 
+\put(3,0){\line(1,0){535.5}} & & & $\left[ \frac{\rho_{g}j_{g}^{2}}{g \Delta\rho D}
+\right]^{1/2} = f(x)$ \\ 
+Stratified Wavy & & & \\ 
+Annular & $G_{g} = 1.3 G_{f}^{0.285} \left( \frac{D}{D_{r}} \right)^{0.38}$ &
+$1.9 \left( \frac{j_{g}}{j_{f}} \right)^{0.18} = \left[ \frac{j_{g}\rho_{g}^{1/2}}{g
+\Delta\rho o} \right]^{0.2} \left( \frac{j_{g}^{2}}{gD} \right)^{0.18}$ & \\ 
+\put(3,0){\line(1,0){200.5}} & & & \\ 
+Intermittent & & & \\  
+Annular & $D_{r} = 30.5 mm$ (Standard Pipe Size) & & \\ 
+\put(3,0){\line(1,0){535.5}} & & & $X = 1.6$ \\ 
+Dispersed & & & \\ 
+Annular & & & \\ 
+\put(3,0){\line(1,0){100.5}} & $G = 10^{7} \frac{kg}{hr \cdot m^{2}}$ &
+$\left[ \frac{ \left( dp/dx \right)_{fs}}{g \Delta\rho} \right]^{1.2}
+\left( \frac{\sigma}{g^{2} \Delta \rho D} \right)^{-0.25} = 9.7$ & \\ 
+Dispersed - Intermittent & & & \\ 
+ & & & $\left[ \frac{ \left( dp/dx \right)_{fo}}{g \Delta \rho} \right]^{1.2} =
+f(X)$ \\  [3mm]\hline
+\end{tabular}
+
+\end{minipage}
+\end{sidewaystable}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{sidewaystable}[hp]
+\begin{minipage}{9.0in}
+
+\begin{tabular}{*{4}{l}}
+\multicolumn{4}{l}{\bf Table 2.3  Flow-Pattern Maps for Vertical Upward Two-Phase Flow Systems Based on Generalized} \\ 
+\hspace{18mm} \bf {Coordinate Parameters} &   &   &   \\  [5mm] \hline
+  &  &  &  \\ 
+Author & Fluids & Pipe Diameter & Coordinate Parameters\\  [5mm] \hline
+Kosterin (1949) & Air-Water & 1 in. & $\beta$, j\\ 
+Kozlov (1954) & Air-Water & 1 in. & $\beta$, $\frac{j}{ \left( gD \right)^{1/2}}$\\ 
+Galegar et al. (1954) & Air-Water, -Kerosene & 0.5 \& 2 in. & $G_{g}$, $G_{f}$\\ 
+Ueda (1958) & Air-Water & 2 in. & $W_{g}$, $W_{f}$\\ 
+Hewitt \& Roberts (1969) & Air-Water & 1.25 in. & $\rho_{f} j_{f}^2$,
+$\rho_{g} j_{g}^2$ \\ 
+Nishigawa et al. (1969) & Air-Water & 1 in. & $j_{f}$, $j_{g}$\\ 
+Govier \& Aziz (1972) & Air-Water & Data from Others & $Yj_{f}$,
+$Xj_{g}$ \\ 
+Oshinowa \& Charles (1974) & Natural Gas-Oil &  & $\left(
+\frac{\beta}{1-\beta} \right)^{1/2}$, $Fr_{TP}/\Delta$\\ 
+Spedding \& Nguyen (1980) & Air-Water & 4.55 mm & $\frac{j}{ \left( gD \right)^{1/2}}$, $j_{f}/j_{g}$\\ 
+Weisman \& Kang (1981) & Freon-113 Vapor-Liquid & 1 in. &
+$j_{g}/\phi_{1}$, $j_{f}/\phi_{2}$ \\  \hline
+
+\end{tabular}
+
+\end{minipage}
+\end{sidewaystable}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{sidewaystable}[hp]
+\tiny
+\begin{minipage}{8.0in}
+\begin{center}
+\begin{tabular}{c c c c}
+\multicolumn{4}{c}{\bf Table 2.4  Flow-Pattern Transitions for Vertical Upward Two-Phase Flow Systems Based on Different Coordinate Parameters} \\ 
+  &  &  &  \\  \hline
+  &  &  &  \\  
+Flow-Pattern & Taitel et al. (1980) & Mishima and Ishii
+(1984) & Weisman and Kang (1981)\\  
+Transition & & & \\  \hline
+$\alpha = 0.25$ & & $\alpha = 0.30$ & \\ 
+Bubble - Slug & $j_{f} = 3.0 j_{g} - 1.15 \left( \frac{g \Delta \rho
+\sigma}{2 \rho_{f}} \right)^{1/4}$ & $j_{f} = \left( \frac{3.33}{C_{o}} - 1
+\right) j_{g} - \left( \frac{0.76}{C_{o}} \right) \left( \frac{\sigma g \Delta
+\rho}{2 \rho_{f}} \right)^{1/4}$ & $\frac{j_{g}}{\left( gD
+\right)^{1/2}} = 0.45 \left( \frac{j^{2}}{gD} \right)^{0.78}$ \\  \hline
+ &  &  &  \\ 
+Slug - Churn & $\frac{l_{e}}{D} = 40.6 \left[ \frac{j}{\left( gD \right)^{1/2}} + 0.22 \right]$ & $\frac{j_{g}}{C_{oj} + 0.35 \left( \frac{g \Delta \rho
+D}{\rho_{f}} \right)^{1/2}}$ ${}^{3} 1$ & Transition to Dispersed
+Flow \\ 
+ &  &  &  \\ 
+ & & $ - 0.813 \left[ \frac{ \left( C_{o} - 1 \right)_{j} + 0.35 \left(
+\frac{g \Delta \rho d}{\rho_{f}} \right)^{1/2}}{j+0.225 \left( \frac{g\Delta \rho
+D}{\rho_{f}} \right)^{1/2}} \right]$ & $j_{f} = \frac{6.8D^{0.111}
+\left( g \Delta \rho \sigma \right)^{0.278}}{\nu^{0.111} \rho_{f}^{0.555}}$\\   \hline
+ &  &  &  \\ 
+Transition to & $j_{g} \left( \frac{\rho_{g}^{2}}{\sigma g \Delta \rho}
+\right)^{1/4} = 3.1$ & $j_{g}^{3} \left( \frac{g \Delta \rho D}{\rho_{f}}
+\right)^{1/2} \left( \alpha - 0.11 \right)$ for small D &
+$1.9 \left( j_{g}/j_{f} \right)^{1/8} = \left[ \frac{\rho_{g}^{2}}{ \left( g \Delta \rho
+\sigma \right)^{1/4}} j_{g} \right]^{0.2} \left( \frac{j_{g}^{2}}{gD}
+\right)^{0.1}$ \\   
+Annular &  & & \\ 
+ & & $j_{g}^{3} \left( \frac{\sigma g \Delta \rho}{\rho_{g}^{2}}
+\right)^{1/4} N_{\mu f}^{-0.2}$ for large D \\   \hline
+
+
+\end{tabular}
+\end{center}
+\end{minipage}
+\end{sidewaystable}
+}
+
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\theta$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4461: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\rho$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4467: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mu$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4471: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mu = X_{1}\mu_{1} + X_{2}\mu_{2} \: or \: \mu = \alpha_{1}\mu_{1} + \alpha_{2}\mu_{2}	\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\tau_{i}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4473: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\tau_{w}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4475: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mbox{v}_{2}/\mbox{v}_{1}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4477: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( \mbox{v}_{2}-\mbox{v}_{1} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4479: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( \sim 2 \sigma/r \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4487: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$r>100 \mu$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4489: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\gamma_{i}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4491: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{i}^{"}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4495: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$P_{i}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4497: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\sim$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4505: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\pi$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4507: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mbox{v}_{1}/\mbox{v}_{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4523: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{dP}{dz} = - \tau_{w} \frac{Per}{A} - \frac{d}{dz} \left( G^{2}/\rho \right) - \rho g \sin(\theta)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Phi_{fo}^{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4533: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}- \tau_{w} \frac{Per}{A} \equiv \left. \frac{dp}{dz} \right|_{fo} \Phi_{fo}^{2} = \frac{4f_{fo}}{D_{H}} \frac{G^2}{2\rho_{f}} \Phi_{fo}^{2} \: for \: \tau_{w} = \frac{f}{2} \frac{G^{2}}{\rho}  
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$D_{H}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4535: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\Phi_{fo}^{2} = (dp/dz)/(dp/dz_{fo}) = \frac{f_{TP}}{f_{fo}} \frac{\rho_{f}}{\rho_{g}} \equiv \frac{f_{TP}}{f_{fo}} \left( 1 + X \frac{\upsilon_{fg}}{\upsilon_{f}} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$f_{TP}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4543: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$f_{fo}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4545: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{f_{TP}}{f_{fo}} = \frac{C}{Re_{TP}^{m}} \left( \frac{Re_{fo}^{m}}{C} \right) = \left( \frac{\mu}{GD} \right)_{TP}^{m} \left( \frac{GD}{\mu} \right)_{fo}^{m} = \left( \frac{\mu_{TP}}{\mu_f} \right)^{m}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mu_{TP}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4547: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$G^{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4561: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( \rho c \right)^{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4563: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X^{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4569: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}X^{2} \equiv \left( \frac{1-X_{g}}{X_{g}} \right)^{1.8} \left( \frac{\rho_{g}}{\rho_{f}} \right) \left( \frac{\mu_{f}}{\mu_{g}} \right)^{.2}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mbox{v}_{i}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4575: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mu_{f}/\mu_{g}>1000$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4577: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$G<100 \: kg/m^{2}sec$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4579: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$G>100 \: kg/m^{2}sec$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4583: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mu_{f}/\mu_{g} \ll 1000$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4585: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\rho_{f}/\rho_{g} \sim 1000$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4587: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}<F> \equiv \frac{1}{A} {}_{-A}F dA
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\bar{F} = \frac{<\alpha F>}{<\alpha>}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mbox{v}_{g}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4597: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\bar{\mbox{v}}_{g} = \frac{<\alpha \mbox{v}_{g}>}{\alpha}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{v}_{gj} \equiv \mbox{v}_{g} - j
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}j \equiv j_{f} + j_{g} 									\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}j_{f}  =  (1 - \alpha) \mbox{v}_{f}								\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}j_{g} = \alpha \mbox{v}_{g}									\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\bar{\mbox{v}}_{g} = \frac{<j_{g}>}{<\alpha>} = \frac{<\alpha \mbox{v}_{g}>}{<\alpha>} = \frac{<\alpha_j>}{<\alpha>}  -  \frac{<\alpha \mbox{v}_{gj}>}{<\alpha>}		\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}% latex2html id marker 738
+In \: the \: above \: equation\: \bar{\mbox{v}}_{g} = \frac{<j_{g}>}{<\alpha>} = Co <j> + \: \bar{\mbox{v}}_{gj}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mbox{v}_{gj} =  <\alpha \mbox{v}_{gj} > / < \alpha >$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4605: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Co \equiv \frac{<\alpha j>}{<\alpha> <j>}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\bar{\mbox{v}}_{g} - j$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4607: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\bar{\mbox{v}}_{gj}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4609: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\bar{\mbox{v}}_{g}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4611: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\bar{\mbox{v}}_{g} - <j>$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4619: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$<\alpha>$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4623: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}<\alpha> = \frac{<j_{g}>}{Co <j> + \bar{\mbox{v}}_{gj}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mbox{v}_{gj}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4627: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$<j_{g}>$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4629: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$v_{gj}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4631: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{tabular}{*{2}{l}}
+\multicolumn{2}{l}{\bf Table 3.1  Important Dimensionless Variables in Multiphase Flow*} \\ [5mm] \hline
+  &  \\ 
+Atwood Ratio-At  - & $\frac{\rho_{2} - \rho_{1}}{\rho_{2} + \rho_{1}}$\\ 
+  &   \\ 
+Fourier No-Fo    - & $\frac{a \: t}{L^{2}}$\\ 
+  &    \\ 
+Froude no - Fr   - & $\frac{\mbox{v}^{2}}{gL} \: or \: Fr* = \frac{Fr}{At} = \left( \frac{\rho_{2} + \rho_{1}}{\rho_{2} - \rho_{1}} \right) \frac{\mbox{v}^{2}}{gL}$\\ 
+  &     \\ 
+Laplace Constant \dag  - & $A = \sqrt{\frac{\sigma}{\Delta \rho g}}$\\ 
+  &     \\ 
+Hem Mach No      - & $M^{2} = G^{2}\left[ \frac{X_{1}}{\rho_{1}^{2} C_{1}^{2}} + \frac{X_{2}}{\rho_{2}^{2} C_{2}^{2}} \right]$\\ 
+  &     \\ 
+Martinelli No   - & $X^{2} = \left( \frac{X_{1}}{X_{2}} \right)^{1.8} \left( \frac{\rho_{2}}{\rho_{1}} \right) \left( \frac{\mu_{1}}{\mu_{2}} \right)^{.2}$\\ 
+  &      \\ 
+Prandtl No - Pr - &  $\frac{C_{p} \mu}{k}$\\ 
+   &     \\ 
+Reynolds No-Re	- & $\frac{\rho \mbox{v}L}{\mu}$\\ 
+   &     \\ 
+Weber No-We	- & $\frac{\rho \mbox{v}^{2}L}{\sigma}$\\  [5mm] \hline
+\multicolumn{2}{l}{*In this list the characteristic length, L, could be the diameter of the channel, or the}\\ 
+\multicolumn{2}{l}{\hspace{1ex}length scale of the dispersed phase (bubble diameter)  depending  on  the  specific}\\ 
+\hspace{1mm}application. & \\ 
+\multicolumn{2}{l}{\dag This dimensional constant is a useful property length scale for multiphase flow}\\ 
+\multicolumn{2}{l}{\hspace{1mm} calculations compared to bubble diameter when the channel or chamber size is}\\ 
+\hspace{2mm}large. & 
+\end{tabular}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{tabular}{*{3}{l}}
+\multicolumn{3}{l}{\bf Table 3.2  Homogeneous Equilibrium Model Governing Equations*} \\ [5mm] \hline
+  &   &  \\ 
+Mass & $\frac{\partial}{\partial t} \left( \rho A \right) = - \frac{\partial}{\partial t} \left( \rho A \mbox{v} \right)$ & (1)\\ 
+   &  &   \\ 
+Energy & $\frac{\partial \left( \rho Ae \right)}{\partial t} = -\frac{\partial}{\partial z} \left( \rho A\mbox{v}(e+P\upsilon) \right) + q_{w}^{"}Per + v\tau_{w}Per +  \frac{\partial}{\partial z} \left( kA \frac{\partial T}{\partial z} \right)$ & (2)\\ 
+    &   &  \\ 
+Momentum & $\frac{\partial A\mbox{v}}{\partial t} = - \frac{\partial \left( \rho A \mbox{v}^{2} \right)}{\partial z} - \rho g A \sin(\theta) - \tau_{w}Per - \frac{\partial PA}{\partial z}$ & (3)\\ 
+ & & \\ 
+Equation &  & \\ 
+of State & Properties = f($\rho$,u) & (4)\\ 
+  & &  \\ 
+Constituitive & & \\ 
+Relations  & $\tau_{w}  =  f(\rho,\mbox{v},D_{H},\mu)$ & (5)\\ 
+           & $q_{w}^{"} = h(T_{w} - T)$ & (6)\\ 
+           & $A  = f(z,t)$ & (7)\\ 
+  &  &  \\ 
+Definitions & & \\ 
+Total Energy & $e\cong u + \frac{\mbox{v}^{2}}{2} + gz\sin(\theta)$ & (8)\\ 
+Mix. Density & $\rho\cong \alpha_{1}\rho_{1} + \alpha_{2}\rho_{2}$ & (9)\\ 
+Int. Energy & $u\cong X_{1}u_{1} + X_{2}u_{2}$ & (10)\\ 
+Spec. Vol. & $\upsilon\cong X_{1}\upsilon_{1} + X_{2}\upsilon_{2}  = 1/\rho$ & (11)\\ 
+Ther. Cond. & $k\cong f(k_{1},k_{2},\alpha_{1},\alpha_{2})$ & (12)\\ 
+Viscosity & $\mu\cong f(\mu_{1},\mu_{2},\alpha_{1},\alpha_{2})$ & (13)\\  [5mm] \hline
+\multicolumn{3}{l}{* In the table it is assumed that only two phases are present, but this can be easily}\\ 
+\multicolumn{3}{l}{\hspace{2mm} extended for more phases or components.}
+\end{tabular}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{tabular}{*{3}{l}}
+\multicolumn{3}{l}{\bf Table 3.3  Separated Flow Model Governing Equations*} \\ [5mm] \hline
+  &   &  \\ 
+Mass & $\frac{\partial}{\partial t} \left( \rho A \right) = - \frac{\partial}{\partial z} \left( \rho_{1} \alpha_{1} \mbox{v}_{1} A  + \rho_{2} \alpha_{2} \mbox{v}_{2} A \right)$ & (1)\\ 
+   &  &   \\ 
+Energy & $\frac{\partial \left( \rho Ae \right)}{\partial t} = -\frac{\partial}{\partial z} \left( \rho_{1} \alpha_{1} \mbox{v}_{1} A(e_{1}+P\upsilon_{1}) + \rho_{2} \alpha_{2} \mbox{v}_{2} A(e_{2}+P\upsilon_{2}) \right) + q_{w}^{"}Per$ & (2)\\ 
+    &   &  \\ 
+Momentum &  & \\ 
+Phase 1 & $\frac{\partial}{\partial t}\left( \rho_{1}A \alpha_{1} \mbox{v}_{1} \right) = - \frac{\partial}{\partial z} \left( \rho_{1} A \alpha_{1} \mbox{v}_{1}^{2} \right) - \rho_{1} \alpha_{1}g A \sin(\theta) - \alpha_{1}\tau_{w}Per -  \frac{\tau_{i}A_{i}}{L_{i}} - \alpha_{1}\frac{\partial PA}{\partial z}$ & (3)\\ 
+ & & \\ 
+Momentum &  & \\ 
+Phase 2 & $\frac{\partial}{\partial t}\left( \rho_{2}A \alpha_{2} \mbox{v}_{2} \right) = - \frac{\partial}{\partial z} \left( \rho_{2} A \alpha_{2} \mbox{v}_{2}^{2} \right) - \rho_{2} \alpha_{2}g A \sin(\theta) - \alpha_{2}\tau_{w}Per -  \frac{\tau_{i}A_{i}}{L_{i}} - \alpha_{2}\frac{\partial PA}{\partial z}$ & (4)\\ 
+ & & \\ 
+New & & \\ 
+Constituitive & $\tau_{i} = f(interface \: conditions)$& (5) \\ 
+Relations  &  &  \\ 
+  &  &  \\ 
+New  &  &  \\ 
+Definitions & $e =  u + \frac{\mbox{v}^{2}}{2} + gz\sin(\theta)$ & (6)\\ 
+  & $i \cong u+\rho \upsilon$ & (7) \\ 
+  & $\rho\cong \alpha_{1}\rho_{1} + \alpha_{2}\rho_{2}$ & (8)\\ 
+  & $u\cong \alpha_{1}\rho_{1}u_{1} + \alpha_{2}\rho_{2}u_{2}$ & (9)\\ 
+  & $\frac{\mbox{v}_{2}}{\mbox{v}_{1}} = \frac{X_{2}}{X_{1}} \frac{\alpha_{1}}{\alpha_{2}} \frac{\rho_{1}}{\rho_{2}}$ & (10) \\  [5mm] \hline
+\multicolumn{3}{l}{* This table considers only two phases present.  Also the frictional (viscous and turbulent) dissipation}\\ 
+\multicolumn{3}{l}{\hspace{2mm} term and the axial conduction term have been neglected similar to most applications.}
+\end{tabular}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{tabular}% latex2html id marker 1053
+{*{3}{l}}
+\multicolumn{3}{l}{\bf Table  3.4  Two-Fluid Model Governing Equations*} \\ [5mm] \hline
+  &   &  \\ 
+Mass & $\frac{\partial}{\partial t} \left( \rho_{1} \alpha_{1} A \right) = - \frac{\partial}{\partial z} \left( \rho_{1} \alpha_{1} \mbox{v}_{1} A \right) + \Gamma_{1}$ & (1)\\ 
+   &  &   \\ 
+Energy & $\frac{\partial}{\partial t} \left( \rho_{1} \alpha_{1} Ae_{1} \right) =$ & \\ 
+{\bf Error !} & $\hspace{27mm} +q_{i}^{"} \frac{A_{i}}{L_{i}} + \Gamma_{1} \left( e_{i} \right) - P_{i}\frac{\partial \alpha_{1} A}{\partial z}$ & (2)\\ 
+    &   &  \\ 
+Momentum & $\frac{\partial}{\partial t}\left( \rho_{1}A \alpha_{1} \mbox{v}_{1} \right) = - \frac{\partial}{\partial z} \left( \rho_{1} A \alpha_{1} \mbox{v}_{1}^{2} \right) - \rho_{1} \alpha_{1}g A \sin(\theta)$ & \\ 
+    &    &   \\ 
+         & \hspace{27mm} $- \tau_{w}Per -  \frac{\tau_{i}A_{i}}{L_{i}} + \Gamma_{1} \left( \mbox{v}_{i} \right) - \alpha_{1}\frac{\partial PA}{\partial z}$ & (3)\\ 
+ & & \\ 
+New & & \\ 
+Constituitive & &  \\ 
+Relations  & $\Gamma_{1} = f \left( \mbox{v}_{i}, properties \right) = - \Gamma_{2}$ &  (4)\\ 
+  & $q_{i}^{"} = h_{i} \left( T_{1} - T_{2} \right)$  & (5) \\ 
+  & $P_{i} = P_{1} = P_{2}$ & (6) \\ 
+  & $\frac{A_{i}}{L_{i}} = f(flow \: regime)$ & (7) \\ 
+New  &  &  \\ 
+Definitions & $e_{i} =$ energy transported across interface & (8)\\ 
+            & \hspace{30mm} (e.g. $e_{2}$) & \\ 
+            & $\mbox{v}_{i} = \: \mbox{velocity transported across interface}$ & (9)\\ 
+            & \hspace{30mm} (e.g. $v_{2}$) & \\ 
+            & $\frac{A_{i}}{L_{i}}= \: \mbox{characteristic interfacial are per}$ & (10) \\ 
+            & \hspace{10mm} unit normal length of channel &  \\  [5mm] \hline
+\multicolumn{3}{l}{* The equations for phase 2 are similar to those given above.}
+\end{tabular}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{tabular}% latex2html id marker 1144
+{*{2}{l}}
+\multicolumn{2}{l}{\bf Table  3.5  HEM Pressure Gradient Model} \\ [5mm] \hline
+  &  \\ 
+$\frac{dP}{dz} = \frac{\frac{2f_{fo}G^{2}}{\rho_{f}D}\phi_{fo}^{2} + G^{2}\mbox{v}_{fg} \frac{dX}{di}\frac{di}{dz} + \frac{\rho_{fg}}{\left[ 1 + X\upsilon_{fg}/\upsilon_{f} \right]}}{1 - G^{2}\left[ \left( X_{g}-1 \right) \frac{d\upsilon_{f}}{dP}{}_{i} - X_{g}\frac{d\upsilon_{g}}{dP}{}_{i} - \upsilon_{fg}\frac{dX}{dP}{}_{i} \right] }$ & (1) \\ 
+    &   \\ 
+$\frac{di}{dz} = \frac{q"Per}{\rho A\mbox{v}}$ & (2)\\ [5mm] \hline
+\multicolumn{2}{l}{where $\phi_{fo}^{2}$ is given by Eq. (13) and $d () / dP$ is found from the equation of state.}
+\end{tabular}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{tabular}{*{2}{l}}
+\multicolumn{2}{l}{\bf Table  3.6  Separated Flow Pressure Gradient} \\ [5mm] \hline
+  &   \\ 
+$-\frac{dP}{dz} = \frac{\frac{2f_{fo}G^{2}\mbox{v}_{f}}{D}\phi_{fo}^{2} + G^{2}
+\frac{dX}{di}\frac{di}{dz} (\Gamma_{2}) + g\sin(\theta)\left[ \rho_{g} \alpha +
+\rho_{f}(1 - \alpha) \right]}{1 - G^{2}\left[ \frac{X^{2}}{\alpha} \left( 
+\frac{d\upsilon_{g}}{dP} \right) + \frac{d\alpha}{dz} \left\{ \frac{\left( 1 - X \right)^{2}\upsilon_{f}}{\left(1 - \alpha \right)^{2}} - 
+\frac{X^{2}\upsilon_{g}}{\alpha^{2}} \right\} \right]}$ & (1) \\ 
+   &   \\ 
+$\Gamma_{2} = \left\{ \frac{2X\upsilon_{g}}{\alpha} - \frac{2(1-X)\upsilon_{f}}{(1-\alpha)} \right\} + \frac{d\alpha}{dP} \left\{ \frac{\left( 1-X \right)^{2} \upsilon_{f}}{1-\alpha^{2}} - \frac{X^{2}\upsilon_{g}}{\alpha^{2}} \right\}$ & (2)\\ [5mm] \hline
+\end{tabular}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{tabular}{*{4}{l}}
+\multicolumn{4}{l}{\bf Table  3.7  Drift Flux Suggested Values} \\ [5mm] \hline
+  &  &  & \\ 
+Flow Regime & Co & $U_{gj}$ & References \\ 
+  &   &  &  \\ 
+Bubbly & $1.2-.2 \sqrt{\frac{\rho_{g}}{\rho_{f}}}$ & $1.4\left[ \frac{\sigma g \Delta \rho}{\rho_f^{2}} \right]^{1/4}$ & Ishii, Zuber (1979) \\ 
+   &   &  & \hspace{12mm} Wallis (1979)\\ 
+  &    &  &  \\ 
+Slug & 1.2 &  $.35 \left[ \frac{g\Delta \rho D}{\rho_{f}} \right]^{1/2}$ &
+Collier (1981)\\ 
+  &    &  &  \\ 
+Churn Turbulent & 1.0-1.3 & No recommendation   & \\ 
+                & & (function of fluid)  & \\ [5mm] \hline
+\end{tabular}
+}
+
+\stepcounter{chapter}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( 1-M^{2} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4751: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$P_{b}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4755: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$P_{o}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4757: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$P^{*}/P_{o}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4759: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}c^{2} = \left. \frac{dP}{d\rho} \right|_{s}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}P  =  \rho R_{0}T
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\Delta i  =  C_{P} \Delta T  = \frac{\gamma R_{o}}{\gamma -1} \Delta T
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{P}{P_{o}} = \left. \left( \frac{\rho}{\rho_{o}} \right)^{\gamma} \right|_{s} = \: constant
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}c = \sqrt{\gamma R_{o}T}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{m}{A} = G = \left( \frac{\gamma P_{o}^{2}}{R_{o}T_{o}} \right)^{1/2} M \left[ 1 - \frac{\gamma -1}{2} M^{2} \right]^{\frac{\gamma +1}{2(1-\gamma)}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$G\sqrt{\frac{T_{o}}{P_{o}}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4765: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\frac{d(G)}{d\left( \frac{P}{P_{o}} \right)}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4767: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{P^{*}}{P_{o}} = \left( \frac{2}{\gamma + 1} \right)^{\frac{\gamma}{\gamma - 1}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( \frac{m}{A} \right)_{max}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4773: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}G_{max} = \left( \frac{m}{A} \right)_{max} = \frac{m}{A^{*}} = \frac{\gamma}{R_{o}} \left( \frac{2}{\gamma +1} \right)^{\frac{\gamma +1}{\gamma -1}} \frac{P_{o}}{\sqrt{T_{o}}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$P_{o}\sqrt{T_{o}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4777: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\frac{P^{*}}{P_{o}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4779: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\gamma$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4783: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}G^{2} = - \left. \frac{\_ P}{\_ \upsilon} \right|_{s}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\upsilon$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4787: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}G^{2} = \left[ X \frac{\_ \upsilon}{\_ P} + (1 - X) \frac{\_ \upsilon_{f}}{\_ P} + \_ \upsilon_{fg} \frac{\_ X}{\_ P} \right]^{-1}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( \upsilon = \upsilon_{f} + X\upsilon_{fg} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4789: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}C_{mix}^{2} = \upsilon^{2} \left[ \frac{\_ \upsilon_{g}}{\_ rho} + (1 - X) \frac{\_ \upsilon_{f}}{\_ P} + \upsilon_{fg} \frac{\_ X}{\_ P} \right]^{-1}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$G_{max}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4791: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$G = f \left( \frac{P}{P_{o}} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4795: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$s_{f}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4799: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$s_{g}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4801: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}X = \frac{s_{o} - s_{f}\left( P_{b} \right)}{s_{fg}\left( P_{b} \right)}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}i = i_{f} \left( P_{b} \right) + X\cdot i_{fg} \left( P_{b} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\upsilon = \upsilon_{f} \left( P_{b} \right) + X \upsilon_{fg} \left( P_{b} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}G = \frac{1}{\upsilon} \left[ 2 \left( i_{o} - i \right) \right]^{1/2}
+\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}\eta \equiv \frac{P^{*}}{P_{o}} = \left\{ \frac{2}{\gamma +1} \right\}^{\frac{\gamma}{\gamma -1}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\left( 1 - X_{o} \right) \upsilon_{f_{o}} \ll X_{o}\upsilon_{g_{o}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{v} = \left( 2 \left( i_{o} - i \right) \right)^{1/2}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}i_{o} - i = X_{o}\upsilon_{g_{o}}P_{o} \left( \frac{\gamma}{\gamma +1} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}G = \frac{\mbox{v}}{\upsilon} = \frac{1}{\upsilon} \left[ 2X_{o}\upsilon_{g_{o}}P_{o} \left\{ \frac{\gamma}{\gamma +1} \right\} \right]^{1/2}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{where} \; \upsilon = \left( 1 - X_{o} \right) \upsilon_{f_{o}} + X_{o} \upsilon_{g_{o}} \eta^{-1/\gamma}
+\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{X}{1-X} = \frac{\alpha}{1-\alpha} \frac{\rho_{g}}{\rho_{f}}S
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\frac{\mbox{v}_{g}}{\mbox{v}_{f}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4813: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}G_{max}^{2} = -\frac{dP}{d \left[ \frac{(1-X)^{2}}{(1-\alpha )\rho_{f}} + \frac{X^{2}}{\alpha \rho_{g}} \right]}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}G_{max}^{2} = \frac{-dP}{d \left[ \frac{1}{S} \left[ \upsilon_{f} (1-X) - \upsilon_{g}X \right]  \left[ 1 + X (S-1) \right] \right]}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}i_{o} = \left[ (1 - X) i_{f} + X\cdot i_{g} \right] + \frac{G_{max}^{2}}{2} \left[(1-X) S\upsilon_{f} - X\upsilon_{g} \right]^{2} *\left[X + \frac{1-X}{S^{2}} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$S^{*}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4823: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}S^{*} = \frac{\mbox{v}_{g}}{\mbox{v}_{f}} = \left( \frac{\rho_{f}}{\rho_{g}} \right)m
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$m = \frac{1}{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4827: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$m = \frac{1}{3}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4829: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}G_{c} = .61\sqrt{2go\left( P_{o}-P_{b} \right)\rho}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$P^{*}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4841: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}\rho \mbox{u}A = \: constant \: or \: \frac{d\rho}{\rho} + \frac{d\mbox{v}}{\mbox{v}} = -\frac{dA}{A}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}dp = \rho \mbox{v} d\mbox{v} = - \frac{P}{A} \tau^{*}  dz = -\tau^{*} dz, \; \mbox{with} \: \tau^{*} \equiv \frac{P\tau}{A}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}di + \mbox{v} d\mbox{v} = \frac{q'}{m}dz = q^{*}dz, \; \mbox{with} \: q^{*} \equiv \frac{q'}{m}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\tau$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4865: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}p = f_{i} (\rho, T)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}i = f_{2} (\rho, T)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}[B] \frac{dX}{dz} = \underline{C}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$B \equiv \left( \begin{array}{*{3}{c}} 
+1/\rho & 1/u       & -1/T \\ 
+1      & \rho u    &  0   \\ 
+0      & u         & c_{p}
+\end{array} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4873: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\underline{C} \equiv \left( \begin{array}{c}
+-A'/A   \\ 
+-\tau^{*}   \\ 
+ q^{*}        
+\end{array} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4875: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\underline{X} \equiv \left( \begin{array}{c}
+p        \\ 
+\mbox{v}  \\ 
+T  
+\end{array} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4877: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+\newcounter{bib}
+{\newpage
+\clearpage
+\samepage % latex2html id marker 4897
+\arabic{bib}
+}
+
+\stepcounter{chapter}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta T$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4898: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q" = h\Delta T$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4902: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( T_{wall} - T_{sat} = \Delta T \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4918: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$P_{g}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4924: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{g}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4926: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$P_{f}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4928: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}P_{g} - P_{f}  = \frac{2\sigma}{r}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\sigma$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4932: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{g} = T_{f}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4936: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{f} > T_{sat}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4938: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( T_{f} - T_{sat} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4940: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\Delta T = \left( T_{f} - T_{sat} \right) = \frac{R T_{sat}^{2}}{i_{fg}P_{f}} \left( \frac{2\sigma}{r} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{HN} \sim 0.9 T_{crit}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4942: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( J \left[ \frac{\mbox{nuclei}}{cm^{3} \cdot sec} \right] \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4944: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}J = \lambda N_{o} \exp \left(-\Delta _{G} \left( T_{g} \right)/kT_{g} \right) 
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\lambda$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4946: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\lambda = kT_{g}/h
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$N_{o}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4952: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left[ \frac{\mbox{molec}}{cm^{3}} \right]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4954: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta G$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4956: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\Delta G = \frac{16}{3} \frac{\pi\sigma^{3}}{\left( P_{g}-P_{f} \right)^{2}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( T_{g} = T_{f} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4968: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta  p$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4970: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{HN}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4974: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{HN} \sim 310^{\circ}C$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4976: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\sim 50-60^{\circ}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4980: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$r_{c}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4982: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{w}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4984: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\delta,$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4988: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{f}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4990: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\delta \sim r_{c}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4992: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{ONB} = \left( T_{w} - T_{sat} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4996: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\left( T_{w} - T_{sat} \right)_{ONB} = \left[ \frac{8\sigma q_{ONB}^{"} T_{sat}}{i_{fg}k_{f}\rho_{g}} \right]^{1/2}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{sat} \left( P_{f} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4998: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}q" = h_{NC} \left( T_{w} - T_{sat} \right)  
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{where} \:  h_{NC} = \frac{k_{f}}{L}.14 \left( Gr Pr \right)^{1.3}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( T_{w}-T_{sat} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5002: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$1^{\circ}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5006: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$10^{\circ}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5008: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$P \left( T_{g} \right) - P \left( T_{sat} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5020: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta P$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5022: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}R = \left( \frac{2}{3} \frac{\Delta P}{\rho_f} \right)^{1/2 t}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}R = \frac{2k_{f}\Delta  T}{\rho_{g} i_{fg}} \left( \frac{3t}{\pi a_{f}} \right)^{1/2} 
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$i_{fg}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5036: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$k_{f}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5038: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$a_{f}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5040: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}R^{+} = \frac{2}{3} \left[ \left( t^{+} + 1 \right)^{3/2} - t^{+ 3/2} -1 \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{where} \:	R^{+} = \frac{RA}{B^{2}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}t^{+} = \frac{tA^{2}}{B^2} 
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}A = \left[ \frac{b\Delta T}{T_{sat}\rho_{f}} i_{fg}\rho_{g} \right]^{1/2} 
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}B = \left[ \frac{12}{\pi}Ja \: a_{f} \right]^{1/2} 
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$No \left( c_{\rho f}\Delta T/i_{fg} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5044: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Db \sim \left( \frac{\sigma}{g \left( \rho_{f}-\rho_{g} \right)} \right)^{1/2}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$f^{-1} \sim 1/2 t \left( D_{b} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5048: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}f^{-1} = \frac{D_{b}}{V_{b}}\sim D_{b} \left[ \frac{\sigma g\left( \rho_{f}-\rho_{g} \right)}{\rho_{f}^{2}} \right]^{-1/4}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$sec^{-1}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5050: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}q" = \rho_{g} \frac{\pi}{6}D_{b}^{3}i_{fg} f^{-1} \left( \frac{n}{A} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{C_{pf}\Delta T}{i_{fg}} = C_{sf} \left[ \frac{q"}{\mu_{f}i_{fg}} \left( \frac{\sigma}{g\Delta \rho} \right)^{1/2} \right]^{1/3} Pr_{f}^{m}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$C_{sf}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5054: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$C_{sf} \sim 0.013$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5056: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Pr_{f}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5060: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$h_{NB} \sim \left( \Delta T \right)^{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5064: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q" \sim \Delta T^{m}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5066: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q" = q_{NC}^{"} + q_{NB}^{"} - q_{NB}^{"} \left( @\Delta T_{ONB} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5070: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$j_{g} = \mbox{V}_{g}/\mbox{A}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5072: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{CHF}^{"}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5074: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}q_{CHF}^{"} = \rho_{g}i_{fg}\mbox{V}_{crit}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mbox{V}_{crit}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5076: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$D_{f}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5078: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Cd \left( \frac{\rho_{g}\mbox{V}_{crit}^{2}}{2} \right) \frac{\pi}{2} D_{f}^{2} =  \left( \rho_{f} - \rho_{g} \right)g \frac{\pi}{6} D_{f}^{3}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{V}_{crit} \sim  \left( \frac{g\sigma \Delta \rho}{\rho_{g}^{2}} \right)^{1/4}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}q_{CHF}^{"} = Co\rho_{g}i_{fg} \left( \frac{go \Delta \rho}{\rho_{g}^{2}} \right)^{1/4}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Co = \frac{\pi}{24}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5084: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{q_{CHF_{sub}}^{"}}{q_{CHF_{SAT}}^{"}} = \left[1 + 0.1 \left( \frac{\rho_{f}}{\rho_{g}} \right)^{3/4} \frac{C_{pf}\Delta T_{sub}}{i_{fg}} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta T_{sub}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5092: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\ge 1000^{\circ}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5094: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}h_{fb} = 0.62 \left[ \frac{k_{g}^{3} \rho_{g} \Delta \rho g}{D\mu_{g}\Delta T}  \left( h_{fg} + 0.4C_{pg}\Delta T \right) \right]^{1/4}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$u_{i}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5100: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{h(z)z}{k_{g}} = \left( \frac{z^{3}g\rho_{g} \left(\rho_{f} - \rho_{g} \right) i_{fg}}{4k_{g}\mu_{g}\Delta T} \right)^{1/4}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{h(z)z}{k_{g}} = 0.943 \left( \frac{z^{3}g\rho_{g} \left(\rho_{f} - \rho_{g} \right) i_{fg}}{k_{g}\mu_{g}\Delta T} \right)^{1/4}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Pr^{*}  = \frac{\mu_{g}i_{fg}}{k_{g}\Delta T} \; \mbox{and} \; Gr^{*} = \left( \frac{z^{3}g\rho_{g} \left( \rho_{f} - \rho_{g} \right) }{\mu_{g}^{2}} \right) 
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Nu_{z} = \frac{h(z)z}{k_{g}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{then} \; 	Nu_{z} = C Pr^{*}  Gr^{*^{1/4}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\lambda_{c}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5114: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{\lambda_{c}}{2\pi} = \left( \frac{\sigma}{g \left( \rho_{f} - \rho_{g} \right)} \right)^{1/2}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}q_{MFB}^{"} = 0.09 \rho_{g} i_{fg} \left( \frac{g\Delta \rho \sigma}{\rho_{f}^{2}} \right)^{1/4}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta T_{MFB}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5118: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{MFB}^{"}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5120: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta T_{sat}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5126: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X_{e}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5130: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}X_{e} = \frac{i(z) - i_{f}}{i_{fg}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X_{e} > 1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5142: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}T_{W} = T_{\underline {f}}(z) + \Delta T_{f}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{where} \;  T_{f}(z) = T_{f_{i}} + \frac{q"\cdot Per \cdot z}{G\cdot A\cdot C_{pf}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\Delta T_{f} = q"/h
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$C_{pf}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5152: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta T_{f}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5154: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\left[ \frac{hD}{k_{f}} H \right] = 0.023 \left[ Re \right]^{0.8} \left[ Pr_{l} \right]^{1/3}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{where} \;	 Re_{f} \equiv \frac{GD_{H}}{\mu_{f}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{and} \; Pr_{f} \equiv  \frac{C_{pf}\mu_{f}}{k_{f}}
+\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{ONB}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5168: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Z_{ONB}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5170: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}T_{w_{onb}} = T_{f_{i}} + q" \left[ \frac{Per\cdot Z_{onb}}{G\cdot A\cdot C_{pf}} + \frac{1}{h} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( T_{w_{onb}} - T_{sat} \equiv \Delta T_{onb} \right) $}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5172: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{as} \; \Delta T_{onb} = q" \left[ \frac{Per\cdot Z_{onb}}{G\cdot A\cdot C_{pf}} + \frac{1}{h} \right] - \left( T_{sat} - T_{f_{i}} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta T_{onb}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5174: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Z_{onb}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5176: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\left( T_{W} - T_{SAT} \right)_{ONB} = 0.556 \frac{q"}{1082p^{1.156}} 0.463p^{0.0234}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left[ \frac{W}{m^{2}} \right]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5182: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\left( T_{W} - T_{SAT} \right)_{ONB} = \left( \frac{8\sigma q"\cdot T_{SAT}}{k_{f}i_{fg}\rho_{g}} \right)^{0.5}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$n\cdot r_{c}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5192: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$n = \left\{ \frac{c_{p}\mu}{k} \right\}_{1}^{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5194: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\left( T_{W} - T_{SAT} \right)_{ONB} = \left( \frac{8\sigma q\cdot T_{SAT}}{k_{f} i_{fg} \sigma} \right)^{0.5} Pr_{f}
+\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\alpha(z)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5202: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( T_{wz} - T_{sat} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5208: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}C_{B}g \left(\rho_{f} - \rho_{g} \right) r_{B}^{3} + C_{F}\frac{\tau_{w}}{D_{H}} r_{B}^{3} - C_{s} r_{B}\sigma = 0
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$r_{B}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5210: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$C_{B}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5212: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$C_{F}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5214: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$C_{S}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5216: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Y_{B}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5220: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Y_{B}^{+} \equiv \frac{Y_{B}\rho_{f}}{\mu_{f}} \sqrt{\frac{\tau_{w}}{\rho_{f}}} = .015 \frac{\left( \sigma D_{H}\rho_{f} \right)^{1/2}}{\mu_{f}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Y_{B}^{+}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5222: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( T_{w} - T_{sat} \right)_{B}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5226: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{B}^{+}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5228: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}T_{B}^{+} = Pr_{f} Y_{B}^{+} \mbox{;} 0\le Y_{B}^{+} \le 5
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}T_{B}^{+} = 5 \left[ Pr_{f} + \ln \left(1 + Pr_{f} \left\{ \frac{Y_{B}^{+}}{5} - 1 \right\} \right) \right] \mbox{;} 5\le Y_{B}^{+} \le 30
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}T_{B}^{+} = 5 \left[ Pr_{f} + \ln \left( 1 + 5Pr_{f} \right) + 0.5 \ln \left\{ \frac{Y_{B}^{+}}{30} \right\} \right] ; Y_{B}^{+} \ge 30
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{where} \;	T_{B}^{+} \equiv \frac{c_{pf}\rho_{f}}{q"} \sqrt{\frac{\tau_{w}}{\rho_{f}}} \left( T_{w} - T_{sat} \right)_{B}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{f}(z)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5232: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}T_{f_{B}} (Z) = T_{sat} - q" \left[ \frac{1}{h} -  \frac{T_{B}^{+}}{C_{pf}\rho_{f}} \sqrt{\frac{\rho_{f}}{\tau_{w}}} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$z_{B}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5234: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}T_{f_{B}} (z) = T_{f_{i}} + \frac{q" \cdot Per\cdot z}{G\cdot A\cdot c_{pf}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Z_{FDB}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5238: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\tau_{w} \equiv \frac{f\cdot G^{2}}{2\rho_{f}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( T_{sat} - T_{f_{B}}(z) \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5240: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}T_{sat} - T_{f_{B}} = 0.0022 \left[ \frac{q"\cdot D_{H}}/{k_{f}} \right] \mbox{;} RePr < 7\times 10^{4}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}T_{sat} - T_{f_{B}} = 153 \left[ \frac{q"}{G\cdot C_{\rho_{f}}} \right] \mbox{;} RePr > 7\times 10^{4}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Z_{sc}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5246: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X_{e}(z)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5250: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}X'(z) = X_{e}(z) - X_{e}\left( Z_{FDB} \right) \exp \left[ \frac{X_{e}(z)}{X_{e}\left( Z_{FDB} \right)} - 1 \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X_{e}\left( Z_{FDB} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5252: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X_{e} = X_{e} \left( Z_{FDB} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5254: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\frac{dX'}{dz}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5258: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X'(z) = X_{e}(z)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5260: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$z\gg z_{FDB}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5262: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\alpha (z) = X'(z) \frac{Co \left( \rho_{f} - \rho_{g} \right)}{\rho_{f}} \left( X'(z) \right) - \left( Co - \frac{U_{g_{j}}}{U_{f_{i}}} \frac{\rho_{g}}{\rho_{f}} \right)^{-1}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$U_{f_{i}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5264: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Co \sim$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5268: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$U_{g_{j}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5270: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}U_{g_{j}} = 1.18 \left[ \frac{\sigma g \left( \rho_{f}-\rho_{g} \right)}{\rho_{f}^{2}} \right]^{1/4}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Z_{o}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5274: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Z^{*}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5276: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Z_{o} - Z_{onb}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5278: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}X'(z) = \frac{C_{pf} T_{sat} - T_{f} \left( Zo \right) \left( Z^{+} - T^{*} \right)}{i_{f_{g}}+C_{pf} \left( T_{sat} -T_{f} (Zo) \right) (1-T^{*})}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{Where} \; T^{*} \equiv \tanh \: Z^{+}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{and} \; Z^{+} \equiv \frac{Z - Zo}{Z_{sc} - Zo}
+\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left[ \frac{W}{m^{2}{}^{\circ}C} \right]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5282: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{h_{TP}}{h_{fo}} \;  \left( \mbox{or} \: \frac{h_{TP}}{h_{f}} \right) =  fn   \left( \frac{1}{X_{tt}} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$h_{fo}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5284: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$h_{f}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5286: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X_{tt}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5288: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\pm$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5290: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}h_{TP} = h_{NcB} + h_{c}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$h_{NcB}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5292: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$h_{c}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5294: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}h_{c} = 0.023 \left( \frac{m(1-X)D_{H}}{\mu_{f}} \right)0.8 \left( \frac{\mu c_{p}}{k} \right)_{f}^{0.4} \left( \frac{k_{f}}{D} \right) (F)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}h_{NcB} = 0.00122 \left\{ \frac{k_{f}^{0.79} c_{\rho f}^{0.45} \rho_{f}^{0.49}}{\sigma^{0.5} \mu_{f}^{0.29} i_{f_{g}}^{0.24} \rho_{g}^{0.24}} \right\} \Delta T_{SAT}^{0.24} \Delta P_{SAT}^{0.75}(S)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( \Delta T_{SAT} \right) S$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5306: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Re_{TP} \left( Re\cdot F^{1.25} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5308: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}F = 1 \: \mbox{for} \: \frac{1}{X_{tt}} \le 0.1
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}F = 2.35 \left( \frac{1}{X_{tt}} + 0.213 \right) 0.736 \: \mbox{for} \: \frac{1}{X_{tt}} > 0.1
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}S = \frac{1}{1 + 2.53\times 10^{-6} Re_{l}^{1.17}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( h_{TP} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5310: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\frac{1}{X_{tt}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5314: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}X_{tt} \approx \left( \frac{1-X}{X} \right)^{0.9} \left( \frac{\rho_{g}}{\rho_{f}} \right)^{0.5} \left( \frac{\mu_{f}}{\mu_{g}} \right)^{0.1}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Re_{TP}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5320: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Re(fm(1-X)D/\mu_{l})$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5322: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$F (Re_{TP} = F^{1.25}Re)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5324: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta T_{SAT} (+T_{W} - T_{SAT})$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5332: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$h_{TP}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5334: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta T_{SAT}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5336: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q" (h_{TP} \Delta T_{SAT})$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5338: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta i_{sub}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5362: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$P_{CR}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5388: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X_{CHF}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5400: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Z_{CHF}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5402: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{CHF}^{"} = f\left( X_{e} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5406: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X_{CHF} = f\left( Z_{CHF} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5408: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}X_{CHF} = \frac{4q"\cdot Z_{CHF}}{G\cdot D_{H} i_{f_{g}}} -  \frac{i_{f_{i}} - i_{f}}{i_{fg}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}q_{CHF}^{"} = \frac{G\cdot D\cdot i_{fg}}{4L} \left[ X_{e}(Z = L) + \frac{i_{f} - i_{f_{i}}}{i_{fg}} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}q_{CHF}^{"} = f_{1}\left( X_{CHF} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\left( Z_{CHF} \right) = \frac{D_{H}G\cdot i_{fg} X_{CHF}}{4f_{1} \left( X_{CHF} \right)}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}X_{CHF} = f_{2} \left( Z_{CHF} \right)
+\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}T_{w}(Z) = T_{f_{i}} + q" \left[ \frac{4z}{G\cdot D_{H}C_{pf}} + \frac{1}{h} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}q_{CHF,MIN}^{"} = \frac{ \left( T_{sat} - T_{f_{i}} \right)}{\frac{4z}{G\cdot D_{H}C_{pf}} + \frac{1}{h}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( X_{e}\sim 1 \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5424: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}q_{CHF,MAX}^{"} = \frac{G\cdot D_{H} i_{fg}}{4z} \left[1 + \frac{C_{pf} \left( T_{sat} - T_{f_{i}} \right)}{i_{fg}} \right]
+\end{equation}
+}
+
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{CHF}^{"}(X)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5440: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{CHF}^{"}(Z)_{u}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5444: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{CHF}^{"}(Z)_{nu}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5446: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}F = \frac{\Omega}{1 - \exp \left(\Omega z_{CHF} \right)} \int\limits_{0}^{Z_CHF} \frac{(Z)}{\left( Z_{CHF} \right)_{u}} \exp \left[\Omega \left(Z_{CHF} - Z \right) \right] dz
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Omega$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5452: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\Omega = 0.44 \frac{ \left[1 - X \left( Z_{CHF} \right) \right]^{7.9}}{\left( \frac{G}{10^{6}} \right)^{1.72}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left[ \frac{lb}{hr\cdot ft^{2}} \right]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5456: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}\left( \frac{q_{CHF}^{"} \gamma^{.5}}{i_{fg} \rho_{f}^{.5}} \right) = f\left[ \left( \frac{L}{D_{H}} \right), \left( \frac{C_{pf} \rho_{f}^{.5}D_{H}}{K_{f}\gamma^{.5}} \right), \left( \frac{G\gamma^{.5}}{\rho_{f}^{.5}} \right), \left( \frac{\rho_{f}}{\rho_{g}} \right), \left( \frac{\Delta i_{sub}}{i_{fg}} \right) \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\gamma \equiv \frac{dR}{dP}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}R \equiv \frac{\rho_{f}}{\rho_{g}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{q_{CHF}^{"}}{G\cdot i_{fg}} = \frac{G\cdot D_{H}}{L} \left( 
+\frac{\gamma^{.5}\mu_{f}}{r_{\rho_{f}}D_{H}} \right)^{2/3}
+\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mbox{in}^{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5468: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mbox{Kirby}^{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5478: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{tabular}{*{8}{c}}
+\multicolumn{8}{c}{$q_{CRIT}$ = A - B x(z)}\\  [2mm]
+\multicolumn{8}{c}{where A = $Y_{1}G^{Y_{2}}D^{Y_{3}}$}\\  [2mm]
+\multicolumn{8}{c}{\hspace{4mm} B =  $Y_{4}G^{Y_{5}}D^{Y_{6}}$}\\  [2mm]
+\multicolumn{8}{c}{with $q$ in $\frac{Btu}{h\cdot ft^{2}} \left( \times 10^{-6} \right) \; G$ in $\frac{lb}{h\cdot ft^{2}} \left( \times 10^{-6} \right)$} \\  [2mm]
+\multicolumn{8}{c}{$D$ in inches}\\  [2mm]
+\multicolumn{8}{c}{Range of Data Used in Correlation and Optimized Constants} \\  [4mm] \hline
+Range of & & & & & & & \\ 
+Pressures & 560 & 1000 & 1250 & 1500 & 1600 & 1800 & 2000 \\ 
+psia (bar) & (38.6 bar) & (69 bar) & (86 bar) & (103.5 bar) & (110 bar) & (124 bar) &(138 bar)\\  [2mm] \hline
+& & & & & & & \\ 
+D (in.) & 0.383 & 0.373 & 0.625 & 0.446 & 0.383 & 0.625 & 0.373 \\ 
+ & & 0.446 & & 0.625 & 1.110 & 1.110 & 0.446 \\ [2mm] \hline
+ & & & & & & & \\ 
+z(in.) & 72.0 & 60.0 & 39.4 & 39.4 & 47.0 & 39.4 & 72.0\\ 
+ & & 192.0 & & 72.0 & 72.0 & 47.0 & 144.0\\  [2mm] \hline
+ & & & & & & & \\ 
+G$\times 10^{-6}$ & 0.73 & 0.50 & 1.20 & 0.50 & 0.27 & 0.25 & 0.50 \\ 
+$\frac{lb}{h\cdot ft^{2}}$ & 3.00 & 7.01 & 2.00 & 3.50 & 3.01 & 2.50 & 3.50\\  [2mm] \hline
+ & & & & & & & \\ 
+Form & 1.27 & 1.27 & 1.16 & 1.16 & 1.30 & 1.16 & 1.37\\ 
+Factor ff & 1.42 & 1.92 & 1.26 & 1.92 & 1.63 & 1.63 & 1.92 \\  [2mm] \hline
+ & & & & & & & \\ 
+$Y_{1}$ & 2.411 & 0.7468 & 0.988 & 0.7423 & 0.776 & 0.616 & 6.18\\ 
+$Y_{2}$ & -0.271 & -0.1285 & -0.191 & -0.1057 & -0.118 & -0.155 & 0.231\\ 
+$Y_{3}$ & 0.0* & -0.544 & 0.0* & -0.2335& -0.452 & -0.293 & 2.907\\ 
+$Y_{4}$ & 3.511 & 1.344 & 2.918 & 2.384 & 2.130 & 2.086 & 50.8\\ 
+$Y_{5}$ & 0.345 & 0.526 & 0.287 & 0.6910 & 0.739 & 0.743 & 0.827\\ 
+$Y_{6}$ & 0.0* & -0.2278 & 0.0* & 0.0903 & 0.296 & -0.695 & 4.228\\  [2mm] \hline
+ & & & & & & & \\ 
+No. of & & & & & &  & \\ 
+Expts. & 34 & 269 & 22 & 79 & 98 & 80 & 69 \\  [2mm] \hline
+ & & & & & & & \\ 
+R.M.S. & & & & & & & \\ 	
+Error \% & 3.66 & 5.73 & 3.37 & 4.82 & 3.42 & 5.95 & 6.60 \\  [2mm] \hline
+ & & & & & & & \\ 
+\multicolumn{8}{l}{*No diameter variation}\\ 
+\multicolumn{8}{l}{Overall R.M.S. deviation = 5.30 percent} \\ 
+\end{tabular}
+}
+
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}Nu_{g} = a \left[ Re_{g} \left\{ X + \frac{\rho_{g}}{\rho_{f}} ( 1 - X ) \right\} \right]_{0.4}^{b} Pr_{g,w} c\gamma d
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mbox{where} \;	Y = 1 - 0.1 \left( \frac{\rho_{f}}{\rho_{g}} \right)(1 - X)
+\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X_{e} \equiv$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5524: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Z_{eq}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5526: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{sat}(P)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5528: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X_{e}(Z)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5536: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X_{e}(Z) > $}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5542: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$X' (Z) \equiv $}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5548: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$Z = Z^{*}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5550: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{g}^{"}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5552: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{f}^{"}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5554: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}q" = q_{g}^{"} + q_{f}^{"}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}e \equiv \frac{q_{f}^{"}}{q"}	
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}q" = e\cdot q" + (1-e) q"
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}X_{e}(z) - X_{CHF} = \frac{4q" \left( Z - Z_{CHF} \right)}{G\cdot D_{H} i_{fg}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Z_{eq} = \left[ \frac{G\cdot D_{H} i_{fg}}{4q"} \left( 1-X_{CHF} \right) \right] + Z_{CHF}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}X'(Z) = X_{CHF} + \left[ \frac{4e\cdot q" \left( Z - Z_{CHF} \right)}{G\cdot D_{H} i_{fg}} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Z^{*} = \frac{G\cdot D_{H}}{4e\cdot q"}i_{fg} \left(1 - X_{CHF} \right) + Z_{CHF}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}e = \frac{X' (z) - X_{CHF}}{X_{e}(Z) - Z_{CHF}} = \frac{Z_{eq} - Z_{CHF}}{Z^{*} - Z_{CHF}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}e[water] = 0.402 + 0.674 \ln \: G\left( \frac{D_{H}}{p_{g}0} \right)^{1/2} \left[ 1 - X_{CHF}^{5} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}e[refrigerants] = 0.236 + 0.0811 \ln \: G \left( \frac{D_{H}}{p_{g}0} \right)^{1/2} \left[ 1 - X_{CHF}^{5} \right]
+\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\sqrt{\left( k\rho c \right)_{f}/\left( k\rho c \right)_{w}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5586: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{dc}^{"}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5588: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( T_{w} - T_{SAT} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5590: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$q_{dow}^{"}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5594: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{T_{CHF} - T (Z)}{T_{W} (Z) - T_{CHF}} = 730 \exp \left[ \frac{576}{p} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$800^{\circ} \mbox{F} \left[ T_{w}(Z) - T_{SAT} < 300^{\circ} \mbox{F} \right]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5596: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}h_{TB} = 890 + 16,860 \exp \left[ -0.01 \left( T_{W}(Z) - T_{\underline{SAT}} \right) \right] \left[ \frac{W}{m^{2}{}^{\circ}K} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}h = 7000 \exp \left[-0.008 \Delta T \right] = 0.023 \frac{k_{g}}{\Delta _{eq}} \exp \left( \frac{- 190}{\Delta T} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}{}_{x}Re_{g,f} 0.8 Pr_{g,f}^{0.4} \;  \left[ \frac{W}{m^{2}{}^{\circ}K} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\times 10^{6}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5600: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\times 10^{6} \mbox{lb/hr} \cdot \mbox{ft}^{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5602: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$T_{W}(Z) - T_{SAT}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5606: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$985^{\circ}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5608: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{tabular}{*{7}{c}}
+Groeneveld & & & & & & \\  [4mm] \hline
+ & & & & & No of & RHS \\ 
+Geometry & a & b & c & d & points & error\\  [2mm] \hline
+ & & & & & & \\ 
+Tubes & $\times 10^{-3}$ & 0.989 & 1.41 & -1.15 & 438 & 11.5\% \\ 
+Annuli & $\times 10^{-2}$ & 0.688 & 1.26 & -1.06 & 266 & 6.9\% \\ 
+Tubes and & & & & & & \\ 
+annuli & $3.27 \times 10^{-3}$ & 0.901 & 1.32 & -1.50 & 704 & 12.4\% \\  [2mm] \hline
+ & & & & & & \\ 
+Slaughterbeck & & & & & & \\  [2mm] \hline
+ & & & & & & \\ 
+ & & & & & & RHS\\ 
+Geometry & a & b & c & e & f & error \\  [2mm] \hline
+ & & & & & & \\ 
+Tubes & $1.16 \times 10^{-4}$ & 0.838 & 1.81 & -0.278 & -0.508 & 12.0\%\\  [2mm] \hline
+\end{tabular}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{tabular}{*{3}{c}}
+\multicolumn{3}{l}{Range of data on which correlations are based}\\  [2mm] \hline
+Geometry & Tube & Annulus \\ 
+Flow Direction & Vertical and Horizontal & Vertical\\ 
+De, cm & 0.25 to 2.5 & 0.15 to 0.63\\ 
+P, bars & 68 to 215 & 34 to 100\\ 
+C, $\left[ \frac{g}{cm^{2}\cdot s} \right]$ & 70 to 530 & 90 to 410\\ 
+x, fraction by weight & 0.10 to 0.90 & 0.10 to 0.90\\ 
+q, $\left[ \frac {\mbox{W}}{cm^{2}} \right]$ & 12 to 210 & 45 to 225\\ 
+$\mbox{Nu}_{g}$ & 95 to 1770 & 160 to 640\\ 
+$\left[ \mbox{Re}_{g} \left( X \left(1-X \right) \frac{\rho_{g}}{\rho_{o}} \right) \right]$ & $6.6\times 10^{4} \; \mbox{to} \; 1.3\times 10^{6}$ & $1.0\times 10^{5} \; \mbox{to} \; 3.9\times 10^{5}$ \\ 
+$\mbox{Pr}_{w}$ &	0.88 to 2.21 & 0.91 to 1.22\\ 
+$Y$ & 0.706 to 0.976 &	0.610 to 0.963\\  [2mm] \hline
+\end{tabular}
+}
+
+\stepcounter{chapter}
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$P\_$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5646: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}P_{g} = P\_ \exp \left( \frac{2\sigma}{r*\rho_{f}RT_{g}} \right) \approx P\_ \left( 1 + \frac{2\sigma \rho_{g}}{P\_r*\rho_{f}} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}P_{f} - P\_ = \frac{2\sigma}{r*}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}P_{f} - P_{g} = \frac{2\sigma}{r*} \left( 1 + \frac{\rho_{g}}{\rho_{f}} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}T_{sat} - T_{g} =  \frac{2\sigma T_{g}}{i_{fg}r*\rho_{f}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{dn}{dt} \left[ \frac{\mbox{nuclei}}{\mbox{vol} \cdot \mbox{time}} \right] \sim N_{o}\lambda \exp \left( \frac{-4\pi \sigma r*^{2}}{3kT_{g}} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left[ s^{-1} \right]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5664: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\lambda = \left( \frac{2\sigma}{\pi m} \right)^{1/2}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\mid j \mid = \left( \frac{M}{2\pi R} \right)^{1/2} \frac{P}{T^{1/2}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\mid j \mid$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5676: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}j = j+ = j-
+\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{equation}h_{film} = 0.943 \left( \frac{\rho_{f} \left( \rho_{f} - \rho_{g} \right) g \sin(\theta) i_{fg} K_{f}^{3}}{\mu_{f}L \left( T_{gI} - T_{W} \right)} \right)^{1/4}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}i_{fg}^{'} = i_{fg} \left[ 1 + 0.68 \left( \frac{C_{pl}\Delta T_{f}}{i_{fg}} \right) \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\frac{C_{pl}\Delta T}{i_{fg}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5696: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( \frac{ \rho_f\mu_{f}}{\rho_{g}\mu_{g}} \right)^{1/2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5710: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\frac{C_{pl} \left( T_{I} - T_{W} \right)}{i_{fg}Pr_{f}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5712: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{1}{h_{tot}} = \frac{1}{h_{film}} + \frac{1}{h_{gas}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$200^{\circ}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5718: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}h_{gas} = h_{conv} + h_{cond}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$h_{cond}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5720: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}h_{cond} = \frac{m_{s}^{"} \left( i_{bulk} - i_{I} \right)}{\left( T_{bulk} - T_{I} \right)}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}St = \frac{h_{conv}}{\rho_{g}C_{p}u_{g}} = \frac{C_{f}}{2} Pr_{t}^{-1}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{C_{f}}{2} = 0.0296Re_{x}^{-0.2}, \: Re_{x} = 5\times 10^{5} - 10^{7}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Nu_{x} = 0.0296Re_{x}^{0.8}Pr\cdot Pr_{t}^{-1}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Sh_{x} = 0.0296Re_{x}^{0.8}Sc\cdot Sc_{t}^{-1}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Pr_{t} = C{1} + \frac{C_{2}}{Pr}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Sc_{t} = C_{1} + \frac{C_{2}}{Sc}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$C_{1}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5722: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$C_{2}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5724: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{tabular}{|ccc|}\hline
+ & $C_{1}$ & C2 \\  \hline
+Re = $2\times 10^{4}$ & 0.85 & 0.012-0.05 \\  \hline
+Re = $10^{5}$ & 0.85 & 0.005-0.015 \\  \hline
+\end{tabular}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Nu_{x} = \frac{0.0296Re_{x}^{0.8}Pr}{0.85 + \frac{0.01}{Pr}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Sh_{x} = \frac{0.0296Re_{x}^{0.8}Sc}{0.85 + \frac{0.01}{Sc}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}m_{s}^{"} = G \left( \frac{W_{I} - W_{bulk}}{1 - W_{I}} \right)
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}\frac{C_{f}^{*}}{2} = \frac{\ln \left( 1 + B_{f} \right)}{B_{f}} \frac{C_{f}}{2}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$B_{f}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5736: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}B_{f} = \frac{\frac{m"}{G}}{\frac{C_{f}}{2}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}St* = \frac{\ln \left( 1 + B_{h} \right)}{B_{h}}St
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$B_{h}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5738: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}B_{h} = \frac{\frac{m"}{G}}{St}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}St_{AB}^{*} = \frac{\ln \left(1 + B_{m} \right)}{B_{m}}St_{AB}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$B_{m}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5740: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Bm = \frac{\frac{m"}{G}}{St_{AB}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}St = \frac{\frac{C_{f}}{2}}{Pr_{t} + \frac{\sqrt{\frac{C_{f}}{2}}}{St_{k}}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$St_{k}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5742: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}St_{k} = Re_{k}^{-0.2}Pr^{-0.44}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}St_{k} = \frac{\sqrt{ \frac{\tau_{w}k_{s}}{\rho}}}{\nu}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Nu = \frac{\frac{C_{f}}{2RePr}}{Pr_{t} + \frac{\sqrt{\frac{C_{f}}{2}}}{St_{k}}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}Sh = \frac{\frac{C_{f}}{2ReSc}}{Sc_{t} + \frac{\sqrt{\frac{C_{f}}{2}}}{St_{k}}}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$k_{s}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5746: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( k_{s} = 4\delta_{s} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5748: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left( M_{h} , M_{g} \right)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5750: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}h = 1.49.9 \left( \Delta T \right)^{-1.11} \left( \frac{1-Y}{100} \right)^{2.59} \left( P_{tot} \right)^{0.48}
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$0.27 < P_{tot} < 0.70$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5754: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\Delta T < 40^{\circ}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5758: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{${CCl}_{4}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5760: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$C_{6}H_{6}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5762: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$\left[ \frac{m}{s} \right]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5764: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \setbox\sizebox=\hbox{$50^{\circ}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline5766: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}h = 380 \left(\frac{W}{1-W} \right)^{-0.7} \left[ \frac{\mbox{W}}{\mbox{m}^{2}{}^{\circ}\mbox{K}} \right]
+\end{equation}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{equation}h = 11.4 = 284 \left( \frac{1-W}{W} \right) \left[ \frac{\mbox{W}}{\mbox{m}^{2}{}^{\circ}\mbox{K}} \right]
+\end{equation}
+}
+
+\stepcounter{section}
+{\newpage
+\clearpage
+\samepage \begin{sidewaystable}% latex2html id marker 4068
+[hp]
+\begin{minipage}{9.0in}
+\begin{center}
+
+{\tiny
+
+\begin{tabular}{*{8}{l}}
+\multicolumn{8}{l}{\bf Table 9.1  Theoretical and Experimental Investigation of Condensation} \\ [4mm] \hline
+Presence of & & & & & & & \\ 
+noncondensable gas & & Pure Vapor & & \multicolumn{2}{l}{Vapor - noncondensable gas} & & \\  [2mm] \hline
+Vapor-gas boundary & Stationary & Moving vapor(a) & & Stationary (b) & Moving vapor-gas & & \\ 
+layer condition & vapor & & & vapor-gas & &  & \\ 
+& & & & & Laminar & Turbulent & \\  [2mm] \hline
+Interface condition & Smooth & Smooth & Wavy(c) & Smooth & Smooth(d) & Smooth & Wavy\\  [2mm] \hline
+Solution of & Sparrow \& Gregg (1959) & Cess (1960) & ***** & Sparrow \& Eckert (1961) & Sparrow et al (1967) & Jones \& Renz & Kim(1990)\\ 
+conservation equations & Koh et al (1961) & & & Sparrow \& Lin (1964) & Koh (1962) & & \\ 
+& Chen (1961) & & & Minkowycz \& Sparrow (1966) & Denny et al (1971) & & \\ 
+& & & & & Asano et al (1978) & & \\  [2mm] \hline
+Approximate solution & Nusselt (1961) &	Shekriladze \& Gomelauri     (1966) & *****	 & Rose (1969) & Rose (1979) & Whitley (1976) & Kim(1990)\\ 
+& & Mayhew et al (1966) & & & & & \\  [2mm] \hline
+Experimental work & Mills \& Seban (1967) & Mayhew \& Aggarwal (1973) & & Othmer (1929) & Mills \& Denny (1971) & Dallmeyer (1970) & Barry(1987)\\ 
+& Slegers \& Seban (1969) & & & Hampson (1951) & & & Huhtiniemi(1993)\\ 
+& & Goodykoontz \& (1966) & Akers et al (1960) & & Asano et al (1978) &	& \\ 
+& & Dorsh (1967) & Slegers \& Seban (1970) & & & & \\ 
+& & Jacobs et al (1935) & & Al-Diwany \& Rose (1973) & & & \\ 
+& & & & DuVuono \& Christensen (1984) & & & \\  [2mm] \hline
+& & & & & & & \\ 
+\multicolumn{8}{l}{(a)  Since there is no heat resistance in a pure vapor boundary layer, the classification of a laminar or turbulent moving vapor are not needed.}\\ 
+\multicolumn{8}{l}{(b)  For the case of the presence of noncondensable gas, the natural convection flow will be generated from the temperature and the concentration difference on the air-vapor boundary layer.}\\ 
+\multicolumn{8}{l}{(c)  Even though the wavy interface does not mean the turbulent condensate film, both phenomena enhance the condensation.}\\ 
+\multicolumn{8}{l}{(d)  The wavy interface with laminar moving vapor-gas mixture is not considered.}\\ [4mm]
+\multicolumn{8}{l}{*****The analysis or data is sparse and will be discussed in the text.}
+\end{tabular}
+}
+\end{center}
+\end{minipage}
+\end{sidewaystable}
+}
+
+{\newpage
+\clearpage
+\samepage \begin{sidewaystable}[hp]
+\begin{minipage}{9.0in}
+
+\hspace{2.5mm}
+{\bf Table 9.2 Summary of Previous Investigations}
+\begin{center}
+
+\begin{tabular}{*{7}{c}}
+Parameter & Barry (1987) & Cho (1988) & Dallmeyer (1970) & Debhi (1991) & Gerstmann (1967) & Henderson (1969)\\  \hline
+& & & & & & \\ 
+Gas & air & air & air & air, He & air & air\\ 
+Vapor & steam & steam & CC$\mbox{L}_{4}$,$\mbox{C}_{6} \mbox{H}_{6}$ & steam & freon-113 & steam\\ 
+$\mbox{T}_{mix}[^{\circ}$C] & 51.3-88.2 & sat & 95.0 & sat & NA & NA\\  [2mm]
+$\frac{\dot{m}_{air}}{\dot{m}_{tot}}$ & 0.47-0.92 & 0-1.4E-5 & 0.02-0.16 & 0.25-0.9 & trace & 0.1-0.83\\  [2mm]
+$\mbox{v}_{mix} \left[ \frac{m}{s} \right]$ & 2.1-6.9 & $\sim$0 & 1-13 & $\sim$0 & $\sim$0 & NA\\ 
+$\theta [^{\circ}$] & 180 & 0 & 90 & 90 & 0-90 & 180\\ 
+P[MPa] & 0.1 & 0.31-1.24 sat & 0.15-0.45 & 0.1 & NA\\ 
+$\Delta T[^{\circ}$C] & 26.3-63.2 & 35-100 & 55.85 & 10-65 & 4.3-39.4 & NA\\ 
+Geom & plate & disk & plate & tube & plate & tube \\ 
+L/D[mm] & 610 & 137 & 410 & 3500/38 & 457.2 & 1220/29\\  [4mm] \hline
+& & & & & & \\  \hline
+& & & & & &  \\ 
+Parameter & Kroger(1968) & Kutsuna (1987) & Legay (1985) & Robinson (1988) & Slegers (1969) & Spencer (1970)\\  \hline
+& & & & & & \\ 
+Gas & Ar,He & air & air & air & air & $\mbox{N}_{2},\mbox{CO}_{2}$,He\\ 
+Vapor & potassium & steam & steam & steam & steam & freon-113\\ 
+$\mbox{T}_{mix}[^{\circ}$C] & 598-768 & NA & 85-90 & sat & 26.7-65.6 & sat\\  [2mm]
+$\frac{\dot{m}_{air}}{\dot{m}_{tot}}$ & NA & 0-0.15 0.42-0.55 & 0.16-0.87 & 0-0.01 & 0-0.03 & \\  [2mm]
+$\mbox{v}_{mix} \left[\frac{m}{s} \right]$ & $\sim$0 & 2-6 & 4-5.3 & 2m/s, N/A & $\sim$0 & $\sim$0\\ 
+$\theta [^{\circ}$] & 0 & 180 & 180 & 90 & 90 & 90\\ 
+P [MPa] & sat & NA & 0.1 & 0.27-6.2 & 0.004-0.03 & NA\\ 
+$\Delta \mbox{T}[^{\circ}$C] & 2.3-733 & NA & 5.0-15 & 4.0-10 & 1.4-20.8 & NA\\ 
+Geom & disk & plate & plate & disk & plate & tube\\ 
+L/D[mm] & 101.6 & 500 & 800 & 46 & 127 & NA/NA\\  [2mm] \hline
+\end{tabular}
+
+\end{center}
+\end{minipage}
+\end{sidewaystable}
+}
+
+
+\end{document}
